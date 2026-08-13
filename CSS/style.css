@@ -1,0 +1,66 @@
+ /* Importação das fontes */
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+  /* Variáveis globais */
+
+  :root{
+  --cor-fundo:        #ebebeb;
+  --cor-topo:         #000000;;
+  --cor-fonte-topo:   #cccccc;
+  --cor-fonte-suave:  #979797;
+  --cor-rodape:       #292929;
+  --cor-fonte-corpo:  #000000;
+  --cor-fonte-rodape: #acacac;
+  --cor-fundo-menu:   #0e0e0ef1;
+  --cor-fonte-hover:  #cccccc;
+  --fonte-titulo:     'Bebas Neue', arial, sans-serif;
+  --fonte-texto:      'Roboto', arial, sans-serif;
+  --fonte-rodape:     'Josefin Sans', sans-serif;
+}
+
+  /* CORPO-GERAL */
+body{
+    margin: 0;
+  }
+
+  /* Topo */
+  #topo{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--cor-topo);
+    color: var(--cor-fonte-topo);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-family: var(--fonte-titulo);
+    border-bottom: 5px solid #000000;
+  }
+  .menu {
+    background-color: var(--cor-topo);
+  }
+
+  .menu {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-fonte-topo);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 50px;
+    margin-left: 25px;
+  }
+
+   .menu a {
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+  }
+
+  .menu a:hover{
+    color: var(--cor-fonte-hover);
+    background-color: var(--cor-fundo-menu);
+    border-radius: 10px;
+    transition: 0.5s;
+  }
