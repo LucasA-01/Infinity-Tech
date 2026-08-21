@@ -1,5 +1,5 @@
  /* Importação das fontes */
-  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
   /* Variáveis globais */
 
@@ -14,6 +14,7 @@
   --cor-fundo-menu:   #0e0e0ef1;
   --cor-fonte-hover:  #cccccc;
   --fonte-titulo:     'Bebas Neue', arial, sans-serif;
+  --fonte-navegacao:  'Montserrat', arial, sans-serif;
   --fonte-texto:      'Roboto', arial, sans-serif;
   --fonte-rodape:     'Josefin Sans', sans-serif;
 }
@@ -25,42 +26,51 @@ body{
 
   /* Topo */
   #topo{
-    position: sticky;
-    top: 0;
     z-index: 1000;
+    top: 0;
+    position: sticky;
     background-color: var(--cor-topo);
     color: var(--cor-fonte-topo);
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    font-family: var(--fonte-titulo);
-    border-bottom: 5px solid #000000;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #ffffff;
   }
-  .menu {
-    background-color: var(--cor-topo);
+
+  .logo{
+    width: 20vw;
+  }
+
+  .navegacao{
+    display: flex;
+    align-items: center;
+  }
+
+  input[type="search"] {
+    width: 30vw;
+    height: 2vw;
+  }
+
+  .menu img{
+    width: 2.5rem;
   }
 
   .menu {
-    font-family: var(--fonte-titulo);
+    background-color: var(--cor-topo);
+    font-family: var(--fonte-navegacao);
     color: var(--cor-fonte-topo);
-    font-size: 30px;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 10px;
-    margin-right: 50px;
-    margin-left: 25px;
+    gap: 15px;
   }
+
+
 
    .menu a {
     text-decoration: none;
     color: inherit;
-    padding: 10px;
-  }
-
-  .menu a:hover{
-    color: var(--cor-fonte-hover);
-    background-color: var(--cor-fundo-menu);
-    border-radius: 10px;
-    transition: 0.5s;
+    display: flex;
+    align-items: center;
   }
