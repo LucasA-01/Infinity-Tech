@@ -19,9 +19,15 @@
   --fonte-rodape:     'Josefin Sans', sans-serif;
 }
 
-  /* CORPO-GERAL */
-body{
+  /* GERAL */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  .texto{
+    font-family: var(--fonte-texto);
   }
 
   /* Topo */
@@ -49,6 +55,7 @@ body{
   input[type="search"] {
     width: 30vw;
     height: 2vw;
+    margin-right: 1rem;
   }
 
   .menu img{
@@ -65,8 +72,6 @@ body{
     text-decoration: none;
     gap: 15px;
   }
-
-
 
    .menu a {
     text-decoration: none;

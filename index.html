@@ -6,6 +6,8 @@
     <title>Infinity Tech</title>
     <link rel="shortcut icon" href="ASSETS/ICON/Favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <script src="JS/hero-slider.js" defer></script>
 </head>
 <body>
     <!-- TOPO/NAV -->
@@ -26,7 +28,17 @@
 
     <!-- HERO -->
      <main id="hero">
-        <img src="ASSETS/IMG/hero.png" alt="destaque da pagina">
+        <section class="container-slider">
+            <button id="prev-button"><img src="ASSETS/ICON/arrow.png" alt="prev-button"></button>
+            <div class="container-images">
+                <img src="ASSETS/IMG/slide1.jpg" alt="Ilustração de eletrônicos ao redor do símbolo do infinito com a mensagem '...'" class="slider on">
+                <img src="ASSETS/IMG/slide2.jpg" alt="Ilustração de um homem montando um pc gamer com a frase '...'" class="slider">
+                <img src="ASSETS/IMG/slide3.jpg" alt="Ilustração de eletrônicos ao redor do símbolo do infinito com a mensagem '...'" class="slider">
+            </div>
+            <button id="next-button"><img src="ASSETS/ICON/arrow.png" alt="next-button"></button>
+
+            <a href="#" class="botao-fixo-slider">VER MAIS</a>
+        </section>
      </main>
 </body>
 </html>
