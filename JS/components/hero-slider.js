@@ -1,6 +1,13 @@
 const slider = document.querySelectorAll('.slider');
 const btnPrev = document.getElementById('prev-button');
 const btnNext = document.getElementById('next-button');
+const linksDosSlides = {
+    0: "https://netflix.com",
+    1: "https://amazon.com",
+    2: "https://github.com"
+};
+
+const btnSlider = document.getElementById('slider-button');
 
 let currentSlide = 0;
 
@@ -10,6 +17,7 @@ function hideSlider() {
 
 function showSlider() {
     slider[currentSlide].classList.add('on')
+    btnSlide()
 }
 
 function nextSlider() {
@@ -20,6 +28,7 @@ function nextSlider() {
         currentSlide++
     }
     showSlider()
+    return currentSlide
 }
 
 function prevSlider() {
@@ -30,7 +39,15 @@ function prevSlider() {
         currentSlide--
     }
     showSlider()
+    return currentSlide
 }
+
+function btnSlide() {
+    btnSlider.href = linksDosSlides[currentSlide];
+}
+
+btnSlide()
 
 btnNext.addEventListener('click', nextSlider)
 btnPrev.addEventListener('click', prevSlider)
+btnSlider.addEventListener('click', btnSlide(currentSlide))

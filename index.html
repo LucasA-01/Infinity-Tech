@@ -7,38 +7,75 @@
     <link rel="shortcut icon" href="ASSETS/ICON/Favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/index.css">
-    <script src="JS/hero-slider.js" defer></script>
+    <script src="JS/components/hero-slider.js" defer></script>
 </head>
 <body>
-    <!-- TOPO/NAV -->
-    <header id="topo">
-        <a href="index.html"><img src="ASSETS/IMG/Logo.png" alt="Logo da Infinity Tech" class="logo"></a>
-        <nav class="navegacao">
-            <input type="search" name="pesquisa" id="pesquisa">
-            <ul class="menu">
-                <a href=""><img src="ASSETS/ICON/login.png" alt="Login">Login</a>
-                <a href=""><img src="ASSETS/ICON/Sobre.png" alt="Sobre nós"></a>
-                <a href=""><img src="ASSETS/ICON/Ajuda.png" alt="Suporte"></a>
-                <a href=""><img src="ASSETS/ICON/Acessibilidade.png" alt="Acessibilidade"></a>
-                <a href=""><img src="ASSETS/ICON/Carrinho.png" alt="Carrinho de compras"></a>
-                <a href=""><img src="ASSETS/ICON/favoritos.png" alt="Itens favoritos"></a>
-            </ul>
-        </nav>
-    </header>
+  <!-- TOPO/NAV -->
+  <header id="topo">
+    <a href="index.html"><img src="ASSETS/IMG/Logo.png" alt="Logo da Infinity Tech" class="logo"></a>
+    <nav class="navegacao">
+        <input type="search" name="pesquisa" id="pesquisa">
+        <ul class="menu">
+            <a href=""><img src="ASSETS/ICON/login.png" alt="Login">Login</a>
+            <a href=""><img src="ASSETS/ICON/Sobre.png" alt="Sobre nós"></a>
+            <a href=""><img src="ASSETS/ICON/Ajuda.png" alt="Suporte"></a>
+            <a href=""><img src="ASSETS/ICON/Acessibilidade.png" alt="Acessibilidade"></a>
+            <a href=""><img src="ASSETS/ICON/Carrinho.png" alt="Carrinho de compras"></a>
+            <a href=""><img src="ASSETS/ICON/favoritos.png" alt="Itens favoritos"></a>
+        </ul>
+    </nav>
+  </header>
+  <!-- NAV/Lateral -->
+   <section id="tudo">
 
-    <!-- HERO -->
-     <main id="hero">
-        <section class="container-slider">
+     <aside class="navegacao">
+      <div class="btn-expandir">
+        <img src="ASSETS/ICON/3bar.png" alt="">
+      </div>
+  
+      <ul>
+        <li class="item-menu">
+          <a href="#">
+            <span class="icon"><img src="ASSETS/ICON/home.png" alt=""></span>
+            <span class="txt-link">Home</span>
+          </a>
+        </li>
+        <li class="item-menu">
+          <a href="#">
+            <span class="icon"><img src="ASSETS/ICON/login.png" alt=""></span>
+            <span class="txt-link">Login</span>
+          </a>
+        </li>
+        <li class="item-menu">
+          <a href="#">
+            <span class="icon"><img src="ASSETS/ICON/Acessibilidade.png" alt=""></span>
+            <span class="txt-link">Acessibilidade</span>
+          </a>
+        </li>
+        <li class="item-menu">
+          <a href="#">
+            <span class="icon"></span>
+            <span class="txt-link"></span>
+          </a>
+        </li>
+      </ul>
+     </aside>
+      <!-- HERO -->
+    <main id="hero">
+        <article class="container-slider">
             <button id="prev-button"><img src="ASSETS/ICON/arrow.png" alt="prev-button"></button>
             <div class="container-images">
                 <img src="ASSETS/IMG/slide1.jpg" alt="Ilustração de eletrônicos ao redor do símbolo do infinito com a mensagem '...'" class="slider on">
                 <img src="ASSETS/IMG/slide2.jpg" alt="Ilustração de um homem montando um pc gamer com a frase '...'" class="slider">
                 <img src="ASSETS/IMG/slide3.jpg" alt="Ilustração de eletrônicos ao redor do símbolo do infinito com a mensagem '...'" class="slider">
             </div>
+  
             <button id="next-button"><img src="ASSETS/ICON/arrow.png" alt="next-button"></button>
-
-            <a href="#" class="botao-fixo-slider">VER MAIS</a>
-        </section>
-     </main>
+                
+            <a href="#" id="slider-button">VER MAIS</a>
+        </article>
+  
+    </main>
+   </section>
 </body>
 </html>

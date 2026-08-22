@@ -1,12 +1,16 @@
-/* Slider - Hero */
+/* TUDO */
+#tudo{
+    display: flex;
+}
 
+/* Slider - Hero */
 .container-slider {
     position: relative;
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 81vh;
     gap: 1rem;
 }
 
@@ -15,7 +19,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70rem;
+    width: 55rem;
+    top: auto;
 }
 
 .slider {
@@ -40,17 +45,16 @@
 #prev-button img, #next-button img {
     width: 100%;
     height: 100%;
-
 }
 
 #prev-button {
     transform: rotate(180deg);
 }
 
-.botao-fixo-slider {
+#slider-button {
   position: absolute;
-  top: 2rem;
-  left: 8rem;
+  bottom: 1.5rem;
+  left: 15rem;
   z-index: 10;
   background-color: #000b3d;
   color: white;
