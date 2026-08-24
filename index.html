@@ -7,75 +7,143 @@
     <link rel="shortcut icon" href="ASSETS/ICON/Favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/index.css">
-    <script src="JS/components/hero-slider.js" defer></script>
-</head>
-<body>
-  <!-- TOPO/NAV -->
-  <header id="topo">
-    <a href="index.html"><img src="ASSETS/IMG/Logo.png" alt="Logo da Infinity Tech" class="logo"></a>
-    <nav class="navegacao">
+  </head>
+  <body>
+    <!-- TOPO/NAV -->
+    <header id="topo">
+      <a href="index.html"><img src="ASSETS/IMG/Logo.png" alt="Logo da Infinity Tech" class="logo"></a>
+      <nav class="navegacao">
         <input type="search" name="pesquisa" id="pesquisa">
         <ul class="menu">
-            <a href=""><img src="ASSETS/ICON/login.png" alt="Login">Login</a>
-            <a href=""><img src="ASSETS/ICON/Sobre.png" alt="Sobre nós"></a>
-            <a href=""><img src="ASSETS/ICON/Ajuda.png" alt="Suporte"></a>
-            <a href=""><img src="ASSETS/ICON/Acessibilidade.png" alt="Acessibilidade"></a>
-            <a href=""><img src="ASSETS/ICON/Carrinho.png" alt="Carrinho de compras"></a>
-            <a href=""><img src="ASSETS/ICON/favoritos.png" alt="Itens favoritos"></a>
+          <li><a href=""><img src="ASSETS/ICON/login.png" alt="Login">Login</a></li>
+          <li><a href=""><img src="ASSETS/ICON/Sobre.png" alt="Sobre nós"></a></li>
+          <li><a href=""><img src="ASSETS/ICON/Ajuda.png" alt="Suporte"></a></li>
+          <li><a href=""><img src="ASSETS/ICON/Acessibilidade.png" alt="Acessibilidade"></a></li>
+          <li><a href=""><img src="ASSETS/ICON/Carrinho.png" alt="Carrinho de compras"></a></li>
+          <li><a href=""><img src="ASSETS/ICON/favoritos.png" alt="Itens favoritos"></a></li>
         </ul>
-    </nav>
-  </header>
-  <!-- NAV/Lateral -->
-   <section id="tudo">
+      </nav>
+    </header>
+    <!-- NAV/Lateral -->
+   <div id="conteudo-inferior">
+    <aside>
+      <nav class="navegacao-lateral" aria-label="Info">
+        <div class="btn-expandir">
+          <img id="btn-exp" src="ASSETS/ICON/3bar.png" alt="">
+        </div>
+        
+        <ul>
+          <li class="item-menu fixed">
+            <a href="#">
+              <span class="icon"><img src="ASSETS/ICON/home.png" alt=""></span>
+              <span class="txt-link">Home</span>
+            </a>
+          </li>
+          <li class="item-menu">
+            <a href="#">
+              <span class="icon"><img src="ASSETS/ICON/login.png" alt=""></span>
+              <span class="txt-link">Login</span>
+            </a>
+          </li>
+          <li class="item-menu">
+            <a href="#">
+              <span class="icon"><img src="ASSETS/ICON/sobre.png" alt=""></span>
+              <span class="txt-link">Sobre nós</span>
+            </a>
+          </li>
+          <li class="item-menu">
+            <a href="#">
+              <span class="icon"><img src="ASSETS/ICON/Ajuda.png" alt=""></span>
+              <span class="txt-link">Ajuda e Suporte</span>
+            </a>
+          </li>
+          <li class="item-menu">
+            <a href="#">
+              <span class="icon"><img src="ASSETS/ICON/Acessibilidade.png" alt=""></span>
+              <span class="txt-link">Acessibilidade</span>
+            </a>
+          </li>
+          <li class="item-menu">
+            <a href="#">
+              <span class="icon"><img src="ASSETS/ICON/Carrinho.png" alt=""></span>
+              <span class="txt-link">Carrinho</span>
+            </a>
+          </li>
+          <li class="item-menu">
+            <a href="#">
+              <span class="icon"><img src="ASSETS/ICON/favoritos.png" alt=""></span>
+              <span class="txt-link">Itens favoritos</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    
+    <!-- DESTAQUE -->
+    <main id="hero" class="principal">
+      <a href="#" id="slider-button">VER MAIS</a>
 
-     <aside class="navegacao">
-      <div class="btn-expandir">
-        <img src="ASSETS/ICON/3bar.png" alt="">
-      </div>
+      <article class="container-slider">
+        <button id="prev-button"><img src="ASSETS/ICON/arrow.png" alt="prev-button"></button>
+        <div class="container-slides">
+          <img src="ASSETS/IMG/slide1.jpg" alt="Ilustração de eletrônicos ao redor do símbolo do infinito com a mensagem '...'" class="slider on">
+          <img src="ASSETS/IMG/slide2.jpg" alt="Ilustração de um homem montando um pc gamer com a frase '...'" class="slider">
+          <img src="ASSETS/IMG/slide3.jpg" alt="Ilustração de eletrônicos ao redor do símbolo do infinito com a mensagem '...'" class="slider">
+        </div>
+        
+        <button id="next-button"><img src="ASSETS/ICON/arrow.png" alt="next-button"></button>
+        
+      </article>
+      
+    </main>
+  </div>
   
+  <!-- RODAPE -->
+  <!-- <footer class="principal">
+    <aside class="footer-column">
+      <h3>Atendimento</h3>
       <ul>
-        <li class="item-menu">
-          <a href="#">
-            <span class="icon"><img src="ASSETS/ICON/home.png" alt=""></span>
-            <span class="txt-link">Home</span>
-          </a>
-        </li>
-        <li class="item-menu">
-          <a href="#">
-            <span class="icon"><img src="ASSETS/ICON/login.png" alt=""></span>
-            <span class="txt-link">Login</span>
-          </a>
-        </li>
-        <li class="item-menu">
-          <a href="#">
-            <span class="icon"><img src="ASSETS/ICON/Acessibilidade.png" alt=""></span>
-            <span class="txt-link">Acessibilidade</span>
-          </a>
-        </li>
-        <li class="item-menu">
-          <a href="#">
-            <span class="icon"></span>
-            <span class="txt-link"></span>
-          </a>
+        <li><a href="">Ajuda e Suporte</a></li>
+        <li><a href="">Fale conosco</a></li>
+      </ul>
+    </aside>
+    
+    <aside class="footer-column">
+      <h3>Pessoa Jurídica</h3>
+      <p>Fale conosco via:</p>
+      <ul>
+        <li><a href="">Chat</a></li>
+        <li><a href="">Whatsapp</a></li>
+        <li><a href="">Email</a></li>
+      </ul>
+    </aside>
+    
+    <aside class="footer-column">
+      <h3>Mais informações</h3>
+      <ul>
+        <li>
+          <a href="">Política de privacidade</a>
+          <a href="">Política de devolução</a>
+          <a href="">Política de cookies</a>
         </li>
       </ul>
-     </aside>
-      <!-- HERO -->
-    <main id="hero">
-        <article class="container-slider">
-            <button id="prev-button"><img src="ASSETS/ICON/arrow.png" alt="prev-button"></button>
-            <div class="container-images">
-                <img src="ASSETS/IMG/slide1.jpg" alt="Ilustração de eletrônicos ao redor do símbolo do infinito com a mensagem '...'" class="slider on">
-                <img src="ASSETS/IMG/slide2.jpg" alt="Ilustração de um homem montando um pc gamer com a frase '...'" class="slider">
-                <img src="ASSETS/IMG/slide3.jpg" alt="Ilustração de eletrônicos ao redor do símbolo do infinito com a mensagem '...'" class="slider">
-            </div>
-  
-            <button id="next-button"><img src="ASSETS/ICON/arrow.png" alt="next-button"></button>
-                
-            <a href="#" id="slider-button">VER MAIS</a>
-        </article>
-  
-    </main>
-   </section>
+    </aside>
+    
+    <section>
+      <h3>Mídias sociais:</h3>
+      <ul>
+        <li><a href=""><img src="" alt=""></a></li>
+        <li><a href=""><img src="" alt=""></a></li>
+        <li><a href=""><img src="" alt=""></a></li>
+      </ul>
+    </section>
+    
+    <section>
+      <a href=""><img src="ASSETS/IMG/Logo.png" alt="Logo do site"></a>
+    </section>
+  </footer> -->
+  <!-- JS -->
+  <script src="JS/components/hero-slider.js" defer></script>
+  <script src="JS/components/nav-lateral.js" defer></script>
 </body>
 </html>

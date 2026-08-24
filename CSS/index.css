@@ -1,32 +1,47 @@
 /* TUDO */
-#tudo{
+#conteudo-inferior{
     display: flex;
 }
 
+li {
+    list-style-type: none;
+}
+
 /* Slider - Hero */
+main {
+    margin-left: 4rem;
+    width: calc(100% - 4rem);
+    height: 100vh;
+    top: 0;
+}
+
 .container-slider {
     position: relative;
     display: flex;
     width: 100%;
+    height: 100%;
     align-items: center;
     justify-content: center;
-    min-height: 81vh;
+    margin: 0;
+    padding: 2rem;
+    top: 0;
     gap: 1rem;
 }
 
-.container-images {
+.container-slides {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 55rem;
+    width: 100%;
+    height: 100%;
     top: auto;
 }
 
 .slider {
+    position: absolute;
     opacity: 0;
     transition: opacity 0.1s;
-    position: absolute;
     width: 100%;
 }
 
@@ -53,8 +68,7 @@
 
 #slider-button {
   position: absolute;
-  bottom: 1.5rem;
-  left: 15rem;
+  left: 10rem;
   z-index: 10;
   background-color: #000b3d;
   color: white;

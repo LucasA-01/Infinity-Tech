@@ -27,6 +27,10 @@
     font-family: var(--fonte-texto);
 }
 
+body {
+  height: 100%;
+}
+
   /* Topo */
   #topo{
     z-index: 1000;
@@ -38,6 +42,7 @@
     align-items: center;
     justify-content: space-evenly;
     border-bottom: 1px solid #ffffff;
+    height: 7.5rem;
   }
 
   .logo{
@@ -76,3 +81,84 @@
     display: flex;
     align-items: center;
   }
+
+/* NAV - Lateral */
+.navegacao-lateral {
+    width: 4rem;
+    height: 100%;
+    background-color: #000000;
+    padding: 40px 0px 40px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    margin-top: 4.5rem;
+    overflow: hidden;
+    overflow-y: auto;
+    white-space: nowrap;
+    transition: 0.5s;
+}
+
+.navegacao-lateral.expandir{
+    width: 300px;
+}
+
+.btn-expandir {
+    width: 100%;
+    padding: 15px 13px;
+    margin-top: 10px;
+    border-bottom: 2px solid rgb(59, 58, 58);
+}
+
+.btn-expandir > img{
+    color: white;
+    width: 2.3rem;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+}
+
+.item-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 15px;
+    display: flex;
+    gap: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 70px;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.navegacao-lateral.expandir .txt-link{
+    margin-left: 40px;
+    opacity: 1;
+}
+
+ul li.item-menu a.icon > img {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+ul li.item-menu{
+    transition: 0.2s;
+}
+
+ul li.fixed{
+    background-color: rgb(58, 58, 58);
+}
+
+ul li.item-menu:hover {
+    background-color: rgb(58, 58, 58);
+}
+
+.icon > img{
+    width: 2rem;
+}
+
