@@ -1,53 +1,26 @@
-const slider = document.querySelectorAll('.slider');
-const btnPrev = document.getElementById('prev-button');
-const btnNext = document.getElementById('next-button');
-const linksDosSlides = {
-    0: "https://netflix.com",
-    1: "https://amazon.com",
-    2: "https://github.com"
-};
+let slideAtual = 0;
+const slides = document.querySelectorAll(".slider")
+let tempo;
 
-const btnSlider = document.getElementById('slider-button');
+function slideOn(index) {
+    slides.forEach(slide => slide.classList.remove("on"));
 
-let currentSlide = 0;
-
-function hideSlider() {
-    slider.forEach(item => item.classList.remove('on'))
+    slides[index].classList.add("on")
+}
+function iniciar() {
+    tempo = setInterval(() => {
+        slideAtual = (slideAtual + 1) % slides.length;
+        slideOn(slideAtual);
+    
+    }, 4000);
 }
 
-function showSlider() {
-    slider[currentSlide].classList.add('on')
-    btnSlide()
+function pausar() {
+    clearInterval(tempo);
 }
 
-function nextSlider() {
-    hideSlider()
-    if(currentSlide === slider.length -1) {
-        currentSlide = 0
-    } else {
-        currentSlide++
-    }
-    showSlider()
-    return currentSlide
-}
-
-function prevSlider() {
-    hideSlider()
-    if(currentSlide === 0) {
-        currentSlide = slider.length -1
-    } else {
-        currentSlide--
-    }
-    showSlider()
-    return currentSlide
-}
-
-function btnSlide() {
-    btnSlider.href = linksDosSlides[currentSlide];
-}
-
-btnSlide()
-
-btnNext.addEventListener('click', nextSlider)
-btnPrev.addEventListener('click', prevSlider)
-btnSlider.addEventListener('click', btnSlide(currentSlide))
+    slides.forEach(slide => {
+        slide.addEventListener("mouseenter", pausar);
+        slide.addEventListener("mouseleave", iniciar);
+    });
+iniciar();
