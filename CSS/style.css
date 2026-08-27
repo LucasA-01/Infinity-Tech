@@ -13,6 +13,7 @@
   --cor-fonte-rodape: #acacac;
   --cor-fundo-menu:   #0e0e0ef1;
   --cor-fonte-hover:  #cccccc;
+  --cor-fonte-link:   #ffffff;
   --fonte-titulo:     'Bebas Neue', arial, sans-serif;
   --fonte-navegacao:  'Montserrat', arial, sans-serif;
   --fonte-texto:      'Roboto', arial, sans-serif;
@@ -32,6 +33,10 @@ body {
   background-color: #e2e2e2;
 }
 
+a {
+    text-decoration: none;
+}
+
   /* Topo */
   #topo{
     z-index: 1000;
@@ -47,7 +52,7 @@ body {
   }
 
   .logo{
-    width: 20vw;
+    width: 17vw;
   }
 
   .navegacao{
@@ -55,14 +60,8 @@ body {
     align-items: center;
   }
 
-  input[type="search"] {
-    width: 30vw;
-    height: 2vw;
-    margin-right: 1rem;
-  }
-
-  .menu img{
-    width: 2.5rem;
+  .icon{
+    width: 3rem;
   }
 
   .menu {
@@ -73,7 +72,7 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    gap: 15px;
+    gap: 1rem;
   }
 
    .menu a {
@@ -168,3 +167,19 @@ ul li.item-menu:hover {
     width: 2rem;
 }
 
+/* RODAPE */
+footer{
+    margin-top: 5rem;
+    padding: 2rem 2rem 2rem 10rem;
+    background-color: var(--cor-rodape);
+    color: var(--cor-fonte-rodape);
+    display: flex;
+    justify-content: space-around;
+  }
+
+  a{
+    color: var(--cor-fonte-link);
+    margin-top: 1rem;
+  }
+
+  
