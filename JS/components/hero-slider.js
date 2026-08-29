@@ -12,7 +12,7 @@ function iniciar() {
         slideAtual = (slideAtual + 1) % slides.length;
         slideOn(slideAtual);
     
-    }, 4000);
+    }, 3000);
 }
 
 function pausar() {
