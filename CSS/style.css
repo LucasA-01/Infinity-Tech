@@ -48,7 +48,7 @@ a {
     align-items: center;
     justify-content: space-evenly;
     border-bottom: 1px solid #ffffff;
-    height: 7.5rem;
+    height: 6.5rem;
   }
 
   .logo{
@@ -61,7 +61,7 @@ a {
   }
 
   .icon{
-    width: 3rem;
+    width: 2.5rem;
   }
 
   .menu {
@@ -85,15 +85,16 @@ a {
 /* NAV - Lateral */
 
 .navegacao-lateral {
-    width: 4rem;
+    width: 4.2rem;
     height: 100%;
     background-color: #000000;
     padding: 40px 0px 40px 0px;
+    border-right: 2px solid grey;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
-    margin-top: 4.5rem;
+    margin-top: 3.5rem;
     overflow: hidden;
     overflow-y: auto;
     white-space: nowrap;
@@ -105,7 +106,7 @@ a {
 }
 
 .navegacao-lateral.expandir{
-    width: 300px;
+    width: 270px;
 }
 
 .btn-expandir {
@@ -136,18 +137,20 @@ ul{
 }
 
 ul li.item-menu a .txt-link {
-    margin-left: 70px;
+    margin-left: 200px;
     transition: 0.5s;
+    color: black;
     opacity: 0;
 }
 
 .navegacao-lateral.expandir .txt-link{
-    margin-left: 40px;
+    margin-left: 5px;
+    color: white;
     opacity: 1;
 }
 
 ul li.item-menu a.icon > img {
-    font-size: 30px;
+    font-size: 30dvw;
     margin-left: 10px;
 }
 
@@ -168,18 +171,32 @@ ul li.item-menu:hover {
 }
 
 /* RODAPE */
-footer{
+  footer{
     margin-top: 5rem;
-    padding: 2rem 2rem 2rem 10rem;
+    padding: 2rem 2rem 5rem 10rem;
     background-color: var(--cor-rodape);
     color: var(--cor-fonte-rodape);
     display: flex;
     justify-content: space-around;
   }
 
-  a{
+  footer a{
     color: var(--cor-fonte-link);
     margin-top: 1rem;
   }
 
-  
+  h3 {
+    padding-bottom: 1rem;
+  }
+
+  footer > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  footer section ul{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
