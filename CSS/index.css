@@ -1,12 +1,4 @@
 /* TUDO */
-#conteudo-inferior{
-    display: flex;
-}
-
-li {
-    list-style-type: none;
-}
-
 .a{
     color: black;
 }
@@ -20,13 +12,6 @@ li {
 }
 
 /* Slider - Hero */
-main {
-    margin-left: 4rem;
-    width: calc(100% - 4rem);
-    height: calc(100dvh - 4rem);
-    margin-top: 0;
-}
-
 .container-slider {
     position: relative;
     display: flex;

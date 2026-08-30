@@ -4,9 +4,9 @@ let tempo;
 
 function slideOn(index) {
     slides.forEach(slide => slide.classList.remove("on"));
-
     slides[index].classList.add("on")
 }
+
 function iniciar() {
     tempo = setInterval(() => {
         slideAtual = (slideAtual + 1) % slides.length;
@@ -23,4 +23,5 @@ function pausar() {
         slide.addEventListener("mouseenter", pausar);
         slide.addEventListener("mouseleave", iniciar);
     });
+    
 iniciar();

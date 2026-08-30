@@ -33,6 +33,15 @@ body {
   background-color: #e2e2e2;
 }
 
+#conteudo-inferior{
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+}
+
+
 a {
     text-decoration: none;
 }
@@ -46,7 +55,6 @@ a {
     color: var(--cor-fonte-topo);
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     border-bottom: 1px solid #ffffff;
     height: 6.5rem;
   }
@@ -72,6 +80,8 @@ a {
     display: flex;
     align-items: center;
     text-decoration: none;
+    margin-left: 40dvw;
+    margin-right: 10dvw;
     gap: 1rem;
   }
 
@@ -85,10 +95,10 @@ a {
 /* NAV - Lateral */
 
 .navegacao-lateral {
-    width: 4.2rem;
+    width: 5.5dvw;
     height: 100%;
     background-color: #000000;
-    padding: 40px 0px 40px 0px;
+    padding: 10dvh 0 1dvh 0;
     border-right: 2px solid grey;
     position: fixed;
     top: 0;
@@ -97,7 +107,6 @@ a {
     margin-top: 3.5rem;
     overflow: hidden;
     overflow-y: auto;
-    white-space: nowrap;
     transition: 0.5s;
 }
 
@@ -106,14 +115,12 @@ a {
 }
 
 .navegacao-lateral.expandir{
-    width: 270px;
-}
-
-.btn-expandir {
-    width: 100%;
-    padding: 15px 13px;
-    margin-top: 10px;
-    border-bottom: 2px solid rgb(59, 58, 58);
+    width: 20dvw;
+  }
+  
+  #topo .btn-expandir {
+  padding: 20px 15px;
+  margin-right: auto;
 }
 
 .btn-expandir > img{
@@ -133,7 +140,6 @@ ul{
     padding: 20px 15px;
     display: flex;
     gap: 20px;
-    line-height: 40px;
 }
 
 ul li.item-menu a .txt-link {
@@ -168,6 +174,14 @@ ul li.item-menu:hover {
 
 .icon > img{
     width: 2rem;
+}
+
+/* HERO */
+  #hero{
+    margin-left: 4rem;
+    width: calc(100% - 4rem);
+    height: calc(100dvh - 4rem);
+    margin-top: 0;
 }
 
 /* RODAPE */
