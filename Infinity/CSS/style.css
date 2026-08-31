@@ -1,0 +1,182 @@
+ /* Importação das fontes */
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+  /* Variáveis globais */
+
+  :root{
+  --cor-fundo:        #ebebeb;
+  --cor-topo:         #000000;;
+  --cor-fonte-topo:   #cccccc;
+  --cor-fonte-suave:  #979797;
+  --cor-rodape:       #292929;
+  --cor-fonte-corpo:  #000000;
+  --cor-fonte-rodape: #acacac;
+  --cor-fundo-menu:   #0e0e0ef1;
+  --cor-fonte-hover:  #cccccc;
+  --cor-fonte-link:   #ffffff;
+  --fonte-titulo:     'Bebas Neue', arial, sans-serif;
+  --fonte-navegacao:  'Montserrat', arial, sans-serif;
+  --fonte-texto:      'Roboto', arial, sans-serif;
+  --fonte-rodape:     'Josefin Sans', sans-serif;
+}
+
+  /* GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-texto);
+}
+
+body {
+  height: 100%;
+  background-color: #e2e2e2;
+}
+
+a {
+    text-decoration: none;
+}
+
+  /* Topo */
+  #topo{
+    z-index: 1000;
+    top: 0;
+    position: sticky;
+    background-color: var(--cor-topo);
+    color: var(--cor-fonte-topo);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #ffffff;
+    height: 7.5rem;
+  }
+
+  .logo{
+    width: 17vw;
+  }
+
+  .navegacao{
+    display: flex;
+    align-items: center;
+  }
+
+  .icon{
+    width: 3rem;
+  }
+
+  .menu {
+    background-color: var(--cor-topo);
+    font-family: var(--fonte-navegacao);
+    color: var(--cor-fonte-topo);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 1rem;
+  }
+
+   .menu a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+  }
+
+/* NAV - Lateral */
+
+.navegacao-lateral {
+    width: 4rem;
+    height: 100%;
+    background-color: #000000;
+    padding: 40px 0px 40px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    margin-top: 4.5rem;
+    overflow: hidden;
+    overflow-y: auto;
+    white-space: nowrap;
+    transition: 0.5s;
+}
+
+.navegacao-lateral::-webkit-scrollbar {
+  display: none;
+}
+
+.navegacao-lateral.expandir{
+    width: 300px;
+}
+
+.btn-expandir {
+    width: 100%;
+    padding: 15px 13px;
+    margin-top: 10px;
+    border-bottom: 2px solid rgb(59, 58, 58);
+}
+
+.btn-expandir > img{
+    color: white;
+    width: 2.3rem;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+}
+
+.item-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 15px;
+    display: flex;
+    gap: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 70px;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.navegacao-lateral.expandir .txt-link{
+    margin-left: 40px;
+    opacity: 1;
+}
+
+ul li.item-menu a.icon > img {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+ul li.item-menu{
+    transition: 0.2s;
+}
+
+ul li.fixed{
+    background-color: rgb(58, 58, 58);
+}
+
+ul li.item-menu:hover {
+    background-color: rgb(58, 58, 58);
+}
+
+.icon > img{
+    width: 2rem;
+}
+
+/* RODAPE */
+footer{
+    margin-top: 5rem;
+    padding: 2rem 2rem 2rem 10rem;
+    background-color: var(--cor-rodape);
+    color: var(--cor-fonte-rodape);
+    display: flex;
+    gap: 5rem;
+  }
+
+  a{
+    color: var(--cor-fonte-link);
+  }
