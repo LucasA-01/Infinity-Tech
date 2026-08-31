@@ -4,6 +4,7 @@ $usuario = "root";
 $senha = "";
 $banco = "bancoinfitytech";
 
+// ...existing code...
 // Cria a conexão
 $conn = new mysqli($servidor, $usuario, $senha, $banco);
 
