@@ -1,12 +1,4 @@
 /* TUDO */
-#conteudo-inferior{
-    display: flex;
-}
-
-li {
-    list-style-type: none;
-}
-
 .a{
     color: black;
 }
@@ -20,18 +12,9 @@ li {
 }
 
 /* Slider - Hero */
-main {
-    margin-left: 4rem;
-    width: calc(100% - 4rem);
-    height: calc(100dvh - 7.5rem);
-    margin-top: 0;
-}
-
 .container-slider {
     position: relative;
     display: flex;
-    width: 100%;
-    height: 100%;
     align-items: center;
     justify-content: center;
     margin: 0;
@@ -45,25 +28,16 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
 }
 
 .slider {
     position: absolute;
     top: 0;
-    left: 0;
     opacity: 0;
     transition: opacity 0.1s;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: calc(100dvw - 4.9rem);
+    height: 45dvw;
 }
-
-main img {
-    border-radius: 15px;
-}
-
 
 .on {
     opacity: 1;
@@ -72,9 +46,8 @@ main img {
 /* PRODUTOS-DESTAQUES */
 #principais{
     display: flex;
-    gap: 2rem;
-    margin-left: 10rem;
-    justify-content: center;
+    margin-left: 4rem;
+    justify-content: space-evenly;
 }
 
 .produto{
@@ -82,8 +55,8 @@ main img {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 20rem;
-    height: 22rem;
+    width: 17dvw;
+    height: 50dvh;
     border-radius: 10px;
     transition: 0.5s;
     background-color: white;
@@ -98,13 +71,40 @@ main img {
 }
 
 .produto img{
-    width: 10rem;
+    width: 10vw;
+    margin-top: 7vh;
+    margin-bottom: auto;
 }
 
 .produto p{
-    width: 15rem;
+    width: 15vw;
+    margin-bottom: 3vh;
 }
 
 data {
     color: green;
+}
+
+/* Topicos */
+.topico{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 10vw;
+    background-color: transparent;
+    gap: 1rem;
+    color: var(--cor-fonte-corpo);
+}
+
+.topico img:hover{
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgb(151, 151, 151);
+    transform: translateY(-2rem);
+}
+
+.topico img{
+    border-radius: 15px;
+    transition: 0.5s;
+    width: 20vw;
 }
