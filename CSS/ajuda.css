@@ -2,19 +2,18 @@
 #hero{
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
-  background-color: black;
-  border-bottom: 5px solid #cacaca;
+  background-color: var(--cor-fundo-suave);
+  padding-top: 2rem;
   gap: 3px;
   height: 25dvh;
+  border-bottom: 5px solid var(--cor-borda);
   margin-bottom: 5dvh;
-  color: #cacaca;
+  color: var(--cor-fonte-topo);
 }
-
 /* Fundo FAC */
 body{
-  background-color: #474747;
+  background-color: var(--cor-fundo);
 }
 
 /* Link do SAC */
@@ -32,7 +31,7 @@ body{
 }
 
 #sac a{
-  color: #dbdbdb;
+  color: var(--cor-fonte-link);
   font-size: 20px;
 }
 
@@ -52,17 +51,22 @@ body{
 }
 
 details {
+  border: 2px solid var(--cor-borda);
   min-height: 15dvh;
   width: 40dvw;
-  background-color: #cacaca;
+  background-color: var(--cor-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   display: flex;
   flex-direction: column;
   border-radius: 5px;
+  color: var(--cor-fonte-corpo);
   transition: 0.5s;
 }
 
 details:hover{
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid var(--cor-borda);
   transform: translateY(-10px);
 }
 

@@ -1,8 +1,4 @@
 /* TUDO */
-.a{
-    color: black;
-}
-
 .titulos{
     display: flex;
     margin: 5rem 5rem 5rem 10rem;
@@ -59,14 +55,14 @@
     height: 50dvh;
     border-radius: 10px;
     transition: 0.5s;
-    background-color: white;
+    background-color: var(--cor-card);
     gap: 1rem;
     color: var(--cor-fonte-corpo);
 }
 
 .produto:hover {
-    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.5);
-    border: 2px solid rgb(151, 151, 151);
+    box-shadow: 0px 6px 16px var(--cor-sombra);
+    border: 2px solid var(--cor-borda);
     transform: translateY(-2rem);
 }
 
@@ -79,10 +75,6 @@
 .produto p{
     width: 15vw;
     margin-bottom: 3vh;
-}
-
-data {
-    color: green;
 }
 
 /* Topicos */
@@ -98,13 +90,13 @@ data {
 }
 
 .topico img:hover{
-    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.5);
-    border: 2px solid rgb(151, 151, 151);
+    box-shadow: 0px 6px 16px var(--cor-sombra);
+    border: 2px solid var(--cor-borda);
     transform: translateY(-2rem);
 }
 
 .topico img{
     border-radius: 15px;
     transition: 0.5s;
-    width: 20vw;
+    width: 25vw;
 }
