@@ -1,0 +1,110 @@
+/* TUDO */
+.a{
+    color: black;
+}
+
+.titulos{
+    display: flex;
+    margin: 5rem 5rem 5rem 10rem;
+    color: var(--cor-fonte-corpo);
+    font-family: var(--fonte-texto);
+    font-size: 30px;
+}
+
+/* Slider - Hero */
+.container-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0 1rem;
+    top: 0;
+    gap: 1rem;
+}
+
+.container-slides {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.1s;
+    width: calc(100dvw - 4.9rem);
+    height: 45dvw;
+}
+
+.on {
+    opacity: 1;
+}
+
+/* PRODUTOS-DESTAQUES */
+#principais{
+    display: flex;
+    margin-left: 4rem;
+    justify-content: space-evenly;
+}
+
+.produto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 17dvw;
+    height: 50dvh;
+    border-radius: 10px;
+    transition: 0.5s;
+    background-color: white;
+    gap: 1rem;
+    color: var(--cor-fonte-corpo);
+}
+
+.produto:hover {
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgb(151, 151, 151);
+    transform: translateY(-2rem);
+}
+
+.produto img{
+    width: 10vw;
+    margin-top: 7vh;
+    margin-bottom: auto;
+}
+
+.produto p{
+    width: 15vw;
+    margin-bottom: 3vh;
+}
+
+data {
+    color: green;
+}
+
+/* Topicos */
+.topico{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 10vw;
+    background-color: transparent;
+    gap: 1rem;
+    color: var(--cor-fonte-corpo);
+}
+
+.topico img:hover{
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgb(151, 151, 151);
+    transform: translateY(-2rem);
+}
+
+.topico img{
+    border-radius: 15px;
+    transition: 0.5s;
+    width: 20vw;
+}
