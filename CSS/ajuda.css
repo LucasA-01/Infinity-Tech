@@ -3,12 +3,17 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: rgb(179, 177, 177);
+  background-color: var(--cor-fundo-suave);
   padding-top: 2rem;
   gap: 3px;
   height: 25dvh;
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid var(--cor-borda);
   margin-bottom: 5dvh;
+  color: var(--cor-fonte-topo);
+}
+/* Fundo FAC */
+body{
+  background-color: var(--cor-fundo);
 }
 
 /* Link do SAC */
@@ -17,15 +22,16 @@
   margin-bottom: 5dvh;
   margin-left: 10dvw;
   align-items: center;
+  gap: 10px;
 }
 
 #sac img{
-  width: 5dvw;
+  width: 3rem;
   border-radius: 10px;
 }
 
 #sac a{
-  color: rgb(0, 0, 0);
+  color: var(--cor-fonte-link);
   font-size: 20px;
 }
 
@@ -45,19 +51,24 @@
 }
 
 details {
-  border: 2px solid black;
+  border: 2px solid var(--cor-borda);
   min-height: 15dvh;
   width: 40dvw;
-  background-color: white;
+  background-color: var(--cor-card);
   display: flex;
   align-items: center;
   justify-content: center;
   display: flex;
   flex-direction: column;
   border-radius: 5px;
+  color: var(--cor-fonte-corpo);
+  transition: 0.5s;
 }
 
-
+details:hover{
+  border: 2px solid var(--cor-borda);
+  transform: translateY(-10px);
+}
 
 summary {
   margin: 7%;

@@ -4,16 +4,20 @@
   /* Variáveis globais */
 
   :root{
-  --cor-fundo:        #ebebeb;
+  --cor-fundo:        #121212;
   --cor-topo:         #000000;;
   --cor-fonte-topo:   #cccccc;
   --cor-fonte-suave:  #979797;
   --cor-rodape:       #292929;
-  --cor-fonte-corpo:  #000000;
+  --cor-fonte-corpo:  #a3a3a3;
   --cor-fonte-rodape: #acacac;
   --cor-fundo-menu:   #0e0e0ef1;
   --cor-fonte-hover:  #cccccc;
-  --cor-fonte-link:   #ffffff;
+  --cor-fundo-suave:  #504f4f;
+  --cor-fonte-link:   #e4e4e4;
+  --cor-borda:        #a1a1a1;
+  --cor-card:         #3d3d3d;
+  --cor-sombra:       #aaaaaa;
   --fonte-titulo:     'Bebas Neue', arial, sans-serif;
   --fonte-navegacao:  'Montserrat', arial, sans-serif;
   --fonte-texto:      'Roboto', arial, sans-serif;
@@ -30,7 +34,7 @@
 
 body {
   height: 100%;
-  background-color: #e2e2e2;
+  background-color: var(--cor-fundo);
 }
 
 #conteudo-inferior{
@@ -55,7 +59,7 @@ a {
     color: var(--cor-fonte-topo);
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid var(--cor-borda);
     height: 6.5rem;
   }
 
@@ -97,9 +101,9 @@ a {
 .navegacao-lateral {
     width: 4rem;
     height: 100%;
-    background-color: #000000;
+    background-color: var(--cor-fundo-menu);
     padding: 10dvh 0 1dvh 0;
-    border-right: 2px solid grey;
+    border-right: 2px solid var(--cor-borda);
     position: fixed;
     top: 0;
     left: 0;
@@ -124,7 +128,6 @@ a {
 }
 
 .btn-expandir > img{
-    color: white;
     width: 2.3rem;
     cursor: pointer;
 }
@@ -134,7 +137,7 @@ ul{
 }
 
 .item-menu a {
-    color: white;
+    color: var(--cor-fonte-link);
     text-decoration: none;
     font-size: 20px;
     padding: 20px 15px;
@@ -145,13 +148,13 @@ ul{
 ul li.item-menu a .txt-link {
     margin-left: 200px;
     transition: 0.5s;
-    color: black;
+    color: var(--cor-fonte-corpo);
     opacity: 0;
 }
 
 .navegacao-lateral.expandir .txt-link{
     margin-left: 5px;
-    color: white;
+    color: var(--cor-fonte-corpo);
     opacity: 1;
 }
 
@@ -165,11 +168,11 @@ ul li.item-menu{
 }
 
 ul li.fixed{
-    background-color: rgb(58, 58, 58);
+    background-color: var(--cor-fundo-suave);
 }
 
 ul li.item-menu:hover {
-    background-color: rgb(58, 58, 58);
+    background-color: var(--cor-fundo-suave);
 }
 
 .icon > img{
@@ -182,6 +185,12 @@ ul li.item-menu:hover {
     width: calc(100% - 4rem);
     height: calc(100dvh - 4rem);
     margin-top: 0;
+}
+
+/* VALOR */
+
+data {
+    color: #18ff18;
 }
 
 /* RODAPE */
@@ -197,6 +206,10 @@ ul li.item-menu:hover {
   footer a{
     color: var(--cor-fonte-link);
     margin-top: 1rem;
+  }
+
+  footer a:hover{
+    color: var(--cor-fonte-hover);
   }
 
   h3 {
