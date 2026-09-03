@@ -3,9 +3,8 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: var(--cor-fundo-suave);
+  background-color: var(--cor-rodape);
   padding-top: 2rem;
-  gap: 3px;
   height: 25dvh;
   border-bottom: 5px solid var(--cor-borda);
   margin-bottom: 5dvh;
@@ -20,8 +19,8 @@ body{
 #sac{
   display: flex;
   margin-bottom: 5dvh;
-  margin-left: 10dvw;
   align-items: center;
+  margin-left: 6rem;
   gap: 10px;
 }
 
@@ -36,29 +35,21 @@ body{
 }
 
 /* FAQ */
-#faq {
-  display: flex;
-  margin-left: 6dvw;
-  align-items: center;
-  justify-content: center;
-  gap: 5dvw;
-}
-
-.faq-column{
+  #faq{
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
+  margin-left: 6rem;
 }
 
 details {
   border: 2px solid var(--cor-borda);
-  min-height: 15dvh;
-  width: 40dvw;
+  width: 70vw;
+  min-height: 6vw;
   background-color: var(--cor-card);
   display: flex;
-  align-items: center;
   justify-content: center;
-  display: flex;
   flex-direction: column;
   border-radius: 5px;
   color: var(--cor-fonte-corpo);
@@ -67,11 +58,11 @@ details {
 
 details:hover{
   border: 2px solid var(--cor-borda);
-  transform: translateY(-10px);
+  transform: translateY(-5px);
 }
 
-summary {
-  margin: 7%;
+summary{
+  margin: 1rem;
 }
 
 summary:hover{
