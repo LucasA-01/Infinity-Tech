@@ -5,16 +5,16 @@
 
   :root{
   --cor-fundo:        #121212;
-  --cor-topo:         #000000;;
+  --cor-topo:         #000000;
   --cor-fonte-topo:   #cccccc;
   --cor-fonte-suave:  #979797;
   --cor-rodape:       #292929;
   --cor-fonte-corpo:  #a3a3a3;
   --cor-fonte-rodape: #acacac;
-  --cor-fundo-menu:   #0e0e0ef1;
+  --cor-fundo-menu:   #000000;
   --cor-fonte-hover:  #cccccc;
   --cor-fundo-suave:  #504f4f;
-  --cor-fonte-link:   #e4e4e4;
+  --cor-fonte-link:   #134b94;
   --cor-borda:        #a1a1a1;
   --cor-card:         #3d3d3d;
   --cor-sombra:       #aaaaaa;
@@ -23,6 +23,26 @@
   --fonte-texto:      'Roboto', arial, sans-serif;
   --fonte-rodape:     'Josefin Sans', sans-serif;
 }
+
+body.light {
+  --cor-topo:         #5f5f5f;
+  --cor-fundo-menu:   #474747;
+  --cor-fundo:        #a3a3a3;
+  --cor-fonte-suave:  #1d1d1d;
+  --cor-fundo-suave:  #161616;
+  --cor-fonte-corpo:  #212121;
+  --cor-fonte-rodape: #acacac;
+  --cor-fonte-hover:  #7c7b7b;
+  --cor-card:         #dadada;
+  --cor-sombra:       #000000;
+}
+
+.tema {
+  display: flex;
+  justify-self: center;
+  width: 4rem;
+}
+
 
   /* GERAL */
 * {
@@ -148,13 +168,12 @@ ul{
 ul li.item-menu a .txt-link {
     margin-left: 200px;
     transition: 0.5s;
-    color: var(--cor-fonte-corpo);
     opacity: 0;
 }
 
 .navegacao-lateral.expandir .txt-link{
     margin-left: 5px;
-    color: var(--cor-fonte-corpo);
+    color: var(--cor-fonte-topo);
     opacity: 1;
 }
 
