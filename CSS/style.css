@@ -1,5 +1,5 @@
  /* Importação das fontes */
-  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Lexend+Giga:wght@100..900&family=Lexend+Exa:wght@100..900&family=Lexend+Giga:wght@100..900&family=Lexend+Mega:wght@100..900&display=swap');
 
   /* Variáveis globais */
 
@@ -14,7 +14,7 @@
   --cor-fundo-menu:   #000000;
   --cor-fonte-hover:  #cccccc;
   --cor-fundo-suave:  #504f4f;
-  --cor-fonte-link:   #134b94;
+  --cor-fonte-link:   #0057c9;
   --cor-borda:        #a1a1a1;
   --cor-card:         #3d3d3d;
   --cor-sombra:       #aaaaaa;
@@ -31,10 +31,16 @@ body.light {
   --cor-fonte-suave:  #1d1d1d;
   --cor-fundo-suave:  #161616;
   --cor-fonte-corpo:  #212121;
-  --cor-fonte-rodape: #acacac;
   --cor-fonte-hover:  #7c7b7b;
   --cor-card:         #dadada;
   --cor-sombra:       #000000;
+}
+
+html.dislexo{
+  --fonte-titulo:     'Lexend Mega', arial, sans-serif;
+  --fonte-navegacao:  'Lexend Mega', arial, sans-serif;
+  --fonte-texto:      'Lexend Giga', arial, sans-serif;
+  --fonte-rodape:     'Lexend Exa', sans-serif;
 }
 
 .tema {
@@ -44,12 +50,27 @@ body.light {
 }
 
 
-  /* GERAL */
+/* GERAL */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--fonte-texto);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--fonte-texto);
+}
+
+button {
+  all: unset;
+  padding: 0;
+  cursor: pointer;
+}
+
+.dislexia:hover {
+  border: 1px solid var(--cor-borda);
+  border-radius: 5px;
+}
+
+.dislexia {
+  padding: 3px;
 }
 
 body {
@@ -85,6 +106,7 @@ a {
 
   .logo{
     width: 17vw;
+    max-width: 12rem;
   }
 
   .navegacao{
@@ -104,7 +126,7 @@ a {
     display: flex;
     align-items: center;
     text-decoration: none;
-    margin-left: 40dvw;
+    margin-left: 39dvw;
     margin-right: 10dvw;
     gap: 1rem;
   }
@@ -160,7 +182,7 @@ ul{
     color: var(--cor-fonte-link);
     text-decoration: none;
     font-size: 20px;
-    padding: 20px 15px;
+    padding: 20px 14px;
     display: flex;
     gap: 20px;
 }
@@ -198,10 +220,6 @@ ul li.item-menu:hover {
     width: 2rem;
 }
 
-.escuro {
-  
-}
-
 /* HERO */
   #hero{
     margin-left: 4rem;
@@ -219,7 +237,8 @@ data {
 /* RODAPE */
   footer{
     margin-top: 5rem;
-    padding: 2rem 2rem 5rem 10rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
     background-color: var(--cor-rodape);
     color: var(--cor-fonte-rodape);
     display: flex;

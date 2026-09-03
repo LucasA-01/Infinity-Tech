@@ -1,91 +1,138 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Cadastro</title>
-    <link rel="shortcut icon" href="../ASSETS/ICON/Favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/login.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Cadastro</title>
+  <link rel="shortcut icon" href="../ASSETS/ICON/Favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/login.css">
 </head>
 <body>
+  <!-- TOPO/NAV -->
     <header id="topo">
-        <a href="../index.html"><img src="../ASSETS/IMG/Logo.png" alt="Logo da Infinity Tech" class="logo"></a>
-        <nav class="navegacao">
-            <ul class="menu">
-                <li><a href="login.html"><img src="../ASSETS/ICON/login.png" alt="Login" class="icon">Login</a></li>
-                <li><a href=""><img src="../ASSETS/ICON/Ajuda.png" alt="Suporte" class="icon"></a></li>
-                <li><a href=""><img src="../ASSETS/ICON/Acessibilidade.png" alt="Acessibilidade" class="icon"></a></li>
-                <li><a href=""><img src="../ASSETS/ICON/Carrinho.png" alt="Carrinho de compras" class="icon"></a></li>
-                <li><img src="../ASSETS/ICON/tema-escuro.png" class="tema"></li>
-            </ul>
-        </nav>
+      <button class="btn-expandir">
+        <img id="btn-exp" src="../ASSETS/ICON/3bar.png" alt="Botão para expandir a navegação lateral">
+      </button>
+      <a href="index.html"><img src="../ASSETS/IMG/Logo.png" alt="Logo do site Infinity Tech" class="logo"></a>
+      <nav class="navegacao">
+        <ul class="menu">
+          <li><a href="../PAGES/login.html"><img src="../ASSETS/ICON/login.png" alt="Fazer login" class="icon">Login</a></li>
+          <li><a href="../PAGES/ajuda.html"><img src="../ASSETS/ICON/Ajuda.png" alt="Ajuda e suporte" class="icon"></a></li>
+          <li><a href=""><img src="../ASSETS/ICON/Carrinho.png" alt="Carrinho de compras" class="icon"></a></li>
+          <li><button><img src="../ASSETS/ICON/tema-escuro.png" class="tema"></button></li>
+          <li><button class="dislexia">Dislexia</button></li>
+        </ul>
+      </nav>
     </header>
 
-    <main class="area-login">
-        <div class="formulario">
+  <!-- NAV/Lateral -->
+   <div id="conteudo-inferior">
+    <aside>
+      <nav class="navegacao-lateral" aria-label="Info">
+        <ul>
+          <li class="item-menu">
+            <a href="../index.html">
+              <span class="icon"><img src="../ASSETS/ICON/home.png" alt="Página inicial"></span>
+              <span class="txt-link">Home</span>
+            </a>
+          </li>
+          <li class="item-menu">
+            <a href="../PAGES/ajuda.html">
+              <span class="icon"><img src="../ASSETS/ICON/Ajuda.png" alt="Ajuda e suporte"></span>
+              <span class="txt-link">Ajuda</span>
+            </a>
+          </li>
+          <li class="item-menu fixed">
+            <a href="../PAGES/login.html">
+              <span class="icon"><img src="../ASSETS/ICON/login.png" alt="Fazer login"></span>
+              <span class="txt-link">Login</span>
+            </a>
+          </li>
+          <li class="item-menu">
+          <a href="../PAGES/carrinho.html">
+            <span class="icon"><img src="../ASSETS/ICON/Carrinho.png" alt="Carrinho de compras"></span>
+            <span class="txt-link">Carrinho</span>
+          </a>
+        </li>
+        </ul>
+      </nav>
+    </aside>
 
-            <h1>Cadastro</h1>
-            <p>Preencha seus dados abaixo</p>
+  <main class="area-login">
+      <div class="formulario">
 
-            <form method="post" action="../PHP/salvar.php">
+          <h1>Cadastro</h1>
+          <p>Preencha seus dados abaixo</p>
 
-                <label for="nome">Nome completo</label>
-                <input type="text" id="nome" name="nome"
-                       placeholder="Digite seu nome" required>
+          <form method="post" action="../PHP/salvar.php">
 
-                <label for="nascimento">Data de nascimento</label>
-                <input type="date" id="nascimento"
-                       name="nascimento" required>
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nome"
+                      placeholder="Digite seu nome" required>
 
-                <label for="endereco">Endereço</label>
-                <input type="text" id="endereco" name="endereco"
-                       placeholder="Digite seu endereço" required>
+              <label for="nascimento">Data de nascimento</label>
+              <input type="date" id="nascimento"
+                      name="nascimento" required>
 
-                <label for="cpf">CPF</label>
-                <input type="text" id="cpf" name="cpf"
-                       placeholder="000.000.000-00"
-                       maxlength="14" required>
+              <label for="endereco">Endereço</label>
+              <input type="text" id="endereco" name="endereco"
+                      placeholder="Digite seu endereço" required>
 
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email"
-                       placeholder="Digite seu e-mail" required>
+              <label for="cpf">CPF</label>
+              <input type="text" id="cpf" name="cpf"
+                      placeholder="000.000.000-00"
+                      maxlength="14" required>
 
-                <div class="botoes">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email"
+                      placeholder="Digite seu e-mail" required>
 
-                    <button type="submit">
-                        Cadastrar
-                    </button>
+              <div class="botoes">
 
-                    <button type="reset" class="limpar">
-                        Limpar
-                    </button>
+                  <button type="submit" class="btn-formulario">
+                      Cadastrar
+                  </button>
 
-                </div>
+                  <button type="reset" class="btn-formulario">
+                      Limpar
+                  </button>
 
-            </form>
+              </div>
 
-        </div>
-    </main>
+          </form>
 
+      </div>
+  </main>
+  </div>
+  
+  <!-- RODAPE -->
     <footer>
-        <aside class="footer-column">
-            <h4>Atendimento</h4>
-            <ul>
-                <li><a href="">Ajuda e Suporte</a></li>
-                <li><a href="">Fale conosco via Whatsapp</a></li>
-            </ul>
-        </aside>
-
-        <section>
-            <h3>Mídias sociais:</h3>
-           
-                <a href=""><img src="../ASSETS/ICON/Instagram_icon.png" alt="Instagram" class="icon"></a>
-               <a href=""><img src="../ASSETS/ICON/twitter-icon.png" alt="Twitter" class="icon"></a>
-            
-        </section>
-    </footer>
-    <!-- JS -->
-     <script src="../JS/components/tema.js" defer></script>
+      <aside>
+        <h3>Atendimento</h3>
+        <ul>
+          <li><a href="../PAGES/ajuda.html">FAC</a></li>
+          <li><a href="">SAC</a></li>
+        </ul>
+      </aside>
+      
+    <section>
+      <h3>Mídias sociais:</h3>
+      <ul>
+        <li><a href=""><img src="../ASSETS/ICON/Instagram_icon.png" alt="Instagram" class="icon"></a></li>
+        <li><a href=""><img src="../ASSETS/ICON/twitter-icon.png" alt="Twitter" class="icon"></a></li>
+      </ul>
+    </section>
+    
+    <section>
+      <a href=""><img src="../ASSETS/IMG/Logo.png" alt="Logo do site Infinity Tech" class="logo"></a>
+      <p>INFINITY TECH®</p>
+      <p>Site desenvolvido por: Lucas Alves e Valentin Vieira</p>
+    </section>
+  </footer>
+  <!-- JS -->
+    <script src="../JS/components/tema.js" defer></script>
+    <script src="../JS/components/fonte.js" defer></script>
+    <script src="../JS/components/nav-lateral.js" defer></script>
 </body>
 </html>

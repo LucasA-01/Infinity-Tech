@@ -18,10 +18,10 @@
       <nav class="navegacao">
         <ul class="menu">
           <li><a href="../PAGES/login.html"><img src="../ASSETS/ICON/login.png" alt="Fazer login" class="icon">Login</a></li>
-          <li><a href="../PAGES/ajuda.html"><img src="../ASSETS/ICON/Ajuda.png" alt="Ajuda e suporte" class="icon"></a></li>
-          <li><a href=""><img src="../ASSETS/ICON/Acessibilidade.png" alt="Acessibilidade" class="icon"></a></li>
-          <li><a href=""><img src="../ASSETS/ICON/Carrinho.png" alt="Carrinho de compras" class="icon"></a></li>
-          <li><img src="../ASSETS/ICON/tema-escuro.png" class="tema"></li>
+          <li><a href="ajuda.html"><img src="../ASSETS/ICON/Ajuda.png" alt="Ajuda e suporte" class="icon"></a></li>
+          <li><a href="../PAGES/carrinho.html"><img src="../ASSETS/ICON/Carrinho.png" alt="Carrinho de compras" class="icon"></a></li>
+          <li><button><img src="../ASSETS/ICON/tema-escuro.png" class="tema"></button></li>
+          <li><button class="dislexia">Dislexia</button></li>
         </ul>
       </nav>
     </header>
@@ -49,6 +49,12 @@
               <span class="txt-link">Login</span>
             </a>
           </li>
+          <li class="item-menu">
+          <a href="../PAGES/carrinho.html">
+            <span class="icon"><img src="../ASSETS/ICON/Carrinho.png" alt="Carrinho de compras"></span>
+            <span class="txt-link">Carrinho</span>
+          </a>
+        </li>
         </ul>
       </nav>
     </aside>
@@ -65,8 +71,8 @@
       <a href="">SAC</a>
     </div>
     
-      <section id="faq">
-        <ul class="faq-column" id="coluna1">
+      <section>
+        <ul id="faq">
           
           <li>
             <details>
@@ -112,9 +118,7 @@
               </div>
             </details>
           </li>
-        </ul>
-          
-        <ul class="faq-column" id="coluna2">
+  
           <li>
             <details>
               <summary>Water Cooler ou Air Cooler: qual escolher para o meu processador?</summary>
@@ -191,5 +195,6 @@
     <!-- JS -->
     <script src="../JS/components/nav-lateral.js" defer></script>
     <script src="../JS/components/tema.js" defer></script>
+    <script src="../JS/components/fonte.js" defer></script>
 </body>
 </html>

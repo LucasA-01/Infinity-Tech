@@ -13,6 +13,6 @@ menuItem.forEach((item)=>
     item.addEventListener("click", selectTab)
 )
 
-btnExp.addEventListener("click", function(){
+btnExp.addEventListener("click", () => {
     navLateral.classList.toggle("expandir")
 })
