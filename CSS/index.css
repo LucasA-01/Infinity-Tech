@@ -42,8 +42,8 @@
 /* PRODUTOS-DESTAQUES */
 #principais{
     display: flex;
-    margin-left: 4rem;
     justify-content: space-evenly;
+    margin-left: 4rem;
 }
 
 .produto{
