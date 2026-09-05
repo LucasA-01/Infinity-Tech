@@ -1,6 +1,6 @@
 #hero{
     height: 5rem;
-    color: var(--cor-fonte-corpo);
+    color: var(--cor-fonte-topo);
     display: flex;
     justify-content: center;
     align-items: center;
