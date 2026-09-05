@@ -33,6 +33,7 @@ body.light {
   --cor-fonte-corpo:  #212121;
   --cor-fonte-hover:  #7c7b7b;
   --cor-card:         #dadada;
+  --cor-borda:        #000000;
   --cor-sombra:       #000000;
 }
 
