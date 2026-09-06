@@ -16,3 +16,4 @@ menuItem.forEach((item)=>
 btnExp.addEventListener("click", () => {
     navLateral.classList.toggle("expandir")
 })
+

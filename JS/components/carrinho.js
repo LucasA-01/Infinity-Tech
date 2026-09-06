@@ -70,9 +70,11 @@ else {
 
 btnFinalizar.addEventListener('click', () => {
     const confirmarPagamento = confirm("Tem certeza que deseja confirmar o pagamento?");
-
+    
     if(confirmarPagamento) {
         alert("Pagamento realizado com sucesso. Seu produto chegará em breve");
+        document.querySelector("#menu-carrinho").style.display = "none";
+        document.querySelector("#carrinho-vazio").style.display = "block";
     }
     else {
         alert("Pagamento cancelado");

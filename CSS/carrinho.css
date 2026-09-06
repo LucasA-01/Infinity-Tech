@@ -49,9 +49,6 @@ data{
     width: 15dvw;
 }
 
-.resumo {
-}
-
 .resumo h2{
     display: flex;
     margin-bottom: 3dvh;
@@ -71,7 +68,7 @@ data{
 }
 
 .resumo button{
-    background-color: var(--cor-fundo-menu);
+    background-color: var(--cor-fundo-suave);
     padding: 5px;
     border-radius: 5px;
 }

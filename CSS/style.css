@@ -29,7 +29,7 @@ body.light {
   --cor-fundo-menu:   #474747;
   --cor-fundo:        #a3a3a3;
   --cor-fonte-suave:  #1d1d1d;
-  --cor-fundo-suave:  #161616;
+  --cor-fundo-suave:  #c9c5c5;
   --cor-fonte-corpo:  #212121;
   --cor-fonte-hover:  #7c7b7b;
   --cor-card:         #dadada;
@@ -55,8 +55,8 @@ html.dislexo{
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: var(--fonte-texto);
+  box-sizing: border-box;
 }
 
 button {
@@ -189,6 +189,7 @@ ul{
 }
 
 ul li.item-menu a .txt-link {
+  align-self: center;
     margin-left: 200px;
     transition: 0.5s;
     opacity: 0;
@@ -201,7 +202,6 @@ ul li.item-menu a .txt-link {
 }
 
 ul li.item-menu a.icon > img {
-    font-size: 30dvw;
     margin-left: 10px;
 }
 
@@ -239,7 +239,7 @@ data {
   footer{
     margin-top: 5rem;
     padding-top: 2rem;
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
     background-color: var(--cor-rodape);
     color: var(--cor-fonte-rodape);
     display: flex;
@@ -269,4 +269,14 @@ data {
     display: flex;
     justify-content: center;
     gap: 10px;
+  }
+
+  html.dislexo #topo{
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  html.dislexo footer {
+    font-size: 10px;
   }

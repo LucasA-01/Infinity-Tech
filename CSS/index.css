@@ -1,4 +1,3 @@
-/* TUDO */
 .titulos{
     display: flex;
     margin: 5rem 5rem 5rem 10rem;
@@ -99,4 +98,9 @@
     border-radius: 15px;
     transition: 0.5s;
     width: 25vw;
+}
+
+.btn-carrinho{
+    font-size: 30px;
+    color: var(--cor-fonte-corpo);
 }
