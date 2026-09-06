@@ -69,12 +69,12 @@ else {
 }
 
 btnFinalizar.addEventListener('click', () => {
-    const confirmarPagamento = confirm("Tem certeza que deseja confirmar o pagamento?")
+    const confirmarPagamento = confirm("Tem certeza que deseja confirmar o pagamento?");
 
     if(confirmarPagamento) {
-        alert("Pagamento realizado com sucesso. Seu produto chegará em breve")
+        alert("Pagamento realizado com sucesso. Seu produto chegará em breve");
     }
     else {
-        alert("Pagamento cancelado")
+        alert("Pagamento cancelado");
     }
 })
