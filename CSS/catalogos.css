@@ -11,9 +11,10 @@
     transition: opacity 0.1s;
     width: calc(100dvw - 4.9rem);
     height: 45dvw;
+    border-bottom: 5px solid var(--cor-borda);
 }
 
-#principais{
+.topico{
     display: flex;
     justify-content: space-evenly;
     margin-left: 4rem;
@@ -48,4 +49,9 @@
 .produto p{
     width: 15vw;
     margin-bottom: 3vh;
+}
+
+.btn-carrinho{
+    font-size: 30px;
+    color: var(--cor-fonte-corpo);
 }

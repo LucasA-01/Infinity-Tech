@@ -6,7 +6,7 @@
     <title>Hardware</title>
     <link rel="shortcut icon" href="../ASSETS/ICON/Favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/hardware.css">
+    <link rel="stylesheet" href="../CSS/catalogos.css">
 </head>
 <body>
     <header id="topo">
@@ -36,12 +36,6 @@
             <span class="txt-link">Home</span>
           </a>
         </li>
-        <li class="item-menu fixed">
-          <a href="hardware.html">
-            <span class="icon"><img src="../ASSETS/ICON/page.png" alt="Hardware"></span>
-            <span class="txt-link">Hardware</span>
-          </a>
-        </li>
         <li class="item-menu">
           <a href="../PAGES/ajuda.html">
             <span class="icon"><img src="../ASSETS/ICON/Ajuda.png" alt="Ajuda e suporte"></span>
@@ -52,6 +46,18 @@
           <a href="../PAGES/login.html">
             <span class="icon"><img src="../ASSETS/ICON/login.png" alt="Fazer login"></span>
             <span class="txt-link">Login</span>
+          </a>
+        </li>
+        <li class="item-menu fixed">
+          <a href="hardware.html">
+            <span class="icon"><img src="../ASSETS/ICON/hardware.png" alt="Hardware"></span>
+            <span class="txt-link">Hardware</span>
+          </a>
+        </li>
+        <li class="item-menu">
+          <a href="software.html">
+            <span class="icon"><img src="../ASSETS/ICON/software.png" alt="Software"></span>
+            <span class="txt-link">Software</span>
           </a>
         </li>
         <li class="item-menu">
@@ -74,233 +80,178 @@
   <!-- CARDS -->
   <div class="titulos"><h2>Processadores</h2></div>
 
-   <section id="principais">
-  <article class="produto">
-    <img src="../ASSETS/IMG/processador-amd.webp" alt="Imagem processador AMD Ryzen 9 7950X3D">
-    <p>Processador AMD® Ryzen™ 9 7950X3D, 16-Core, 32-Threads</p>
-    <p>
-      A partir de <data value="3.599,55">R$ 3.599,55</data>
-    </p>
-    <a href="../PAGES/carrinho.html?produto=7950x3d" class="btn-carrinho">+</a>
+   <section class="topico">
+    <article class="produto">
+      <img src="../ASSETS/IMG/processador-amd.webp" alt="Imagem processador AMD Ryzen 9 7950X3D">
+      <p>Processador AMD® Ryzen™ 9 7950X3D, 16-Core, 32-Threads</p>
+      <p>
+        A partir de <data value="3.599,55">R$ 3.599,55</data>
+      </p>
+      <a href="../PAGES/carrinho.html?produto=7950x3d" class="btn-carrinho">+</a>
+    </article>
+      
+    <article class="produto">
+      <img src="../ASSETS/IMG/processador-intel.png" alt="Processador Intel Core i9-9900K">
+      <p>Processador INTEL® CORE™ i9-9900K coffee lake refresh</p>
+      <p>
+        A partir de <data value="4.300,90">R$ 4.300,90</data>
+      </p>
+      <a href="../PAGES/carrinho.html?produto=i9-9900k" class="btn-carrinho">+</a>
+    </article>
+  </section>
+
+  <div class="titulos"><h2>Placas de Vídeo</h2></div>
+
+  <section class="topico">
+    <article class="produto">
+      <img src="../ASSETS/IMG/gpu-nvidia.webp" alt="Imagem Placa de vídeo RTX 4090">
+      <p>Placa de Vídeo GALAX® GeForce™ RTX 4090 HOF 24GB</p>
+      <p>
+        A partir de <data value="22.000,00">R$ 22.000,00</data>
+      </p>
+      <a href="../PAGES/carrinho.html?produto=4090" class="btn-carrinho">+</a>
+    </article>
+
+   <article class="produto">
+      <img src="../ASSETS/IMG/gpu-amd.webp" alt="Placa de vídeo AMD Radeon RX 7600 XT">
+      <p>Placa de Vídeo Gigabyte AMD® Radeon™ RX 7600 XT Gaming OC, 16GB</p>
+      <p>
+        A partir de <data value="2.999,90">R$ 2.999,90</data>
+      </p>
+      <a href="../PAGES/carrinho.html?produto=7600xt" class="btn-carrinho">+</a>
   </article>
-    
-  <article class="produto">
-    <img src="../ASSETS/IMG/processador-intel.png" alt="Processador Intel Core i9-9900K">
-    <p>Processador INTEL® CORE™ i9-9900K coffee lake refresh</p>
-    <p>
-      A partir de <data value="4.300,90">R$ 4.300,90</data>
-    </p>
-    <a href="../PAGES/carrinho.html?produto=i9-9900k" class="btn-carrinho">+</a>
-  </article>
-</section>
-
-<div class="titulos"><h2>Placas de Vídeo</h2></div>
-
-<section id="principais">
-  <article class="produto">
-    <img src="" alt="">
-    <p></p>
-    <p>A partir de <data value=""></data></p>
-    <a href="" class="btn-carrinho">+</a>
-  </article>
-
-  <article class="produto">
-    <img src="" alt="">
-    <p></p>
-    <p>A partir de <data value=""></data></p>
-    <a href="" class="btn-carrinho">+</a>
-  </article>
-</section>
+  </section>
 
 
-<div class="titulos"><h2>Placas Mãe</h2></div>
+  <div class="titulos"><h2>Placas Mãe</h2></div>
 
-<section id="principais">
-  <article class="produto">
-    <img src="" alt="">
-    <p></p>
-    <p>A partir de <data value=""></data></p>
-    <a href="" class="btn-carrinho">+</a>
-  </article>
+  <section class="topico">
+    <article class="produto">
+      <img src="../ASSETS/IMG/placa-b550m.png" alt="Placa-Mãe Gigabyte B550M Aorus Elite AM4">
+      <p>Placa-Mãe Gigabyte B550M Aorus Elite, AMD AM4, Micro ATX, DDR4</p>
+      <p>
+        A partir de <data value="789,00">R$ 789,00</data>
+      </p>
+      <a href="../PAGES/carrinho.html?produto=b550m" class="btn-carrinho">+</a>
+    </article>
 
-  <article class="produto">
-    <img src="" alt="">
-    <p></p>
-    <p>A partir de <data value=""></data></p>
-    <a href="" class="btn-carrinho">+</a>
-  </article>
-</section>
-
-
-<div class="titulos"><h2>SSDs</h2></div>
-
-<section id="principais">
-  <article class="produto">
-    <img src="" alt="">
-    <p></p>
-    <p>A partir de <data value=""></data></p>
-    <a href="" class="btn-carrinho">+</a>
-  </article>
-
-  <article class="produto">
-    <img src="" alt="">
-    <p></p>
-    <p>A partir de <data value=""></data></p>
-    <a href="" class="btn-carrinho">+</a>
-  </article>
-</section>
+    <article class="produto">
+      <img src="../ASSETS/IMG/placa-x870e.png" alt="Placa Mãe MSI MAG X870E TOMAHAWK WIFI AM5">
+      <p>Placa Mãe MSI MAG X870E TOMAHAWK WIFI, AM5, ATX, DDR5 UDIMM, Wi-Fi 7, Preto</p>
+      <p>
+        A partir de <data value="2.499,99">R$ 2.499,99</data>
+      </p>
+      <a href="../PAGES/carrinho.html?produto=x870e" class="btn-carrinho">+</a>
+    </article>
+  </section>
 
 
-<div class="titulos"><h2>Memórias RAM</h2></div>
+  <div class="titulos"><h2>SSDs</h2></div>
 
-<section id="principais">
-  <article class="produto">
-    <img src="" alt="">
-    <p></p>
-    <p>A partir de <data value=""></data></p>
-    <a href="" class="btn-carrinho">+</a>
-  </article>
+  <section class="topico">
+    <article class="produto">
+      <img src="../ASSETS/IMG/ssd-sata.png" alt="SSD Kingston A400 SATA III, 480gb">
+      <p>SSD Kingston A400, 480GB, SATA III, 2.5", Leitura: 500MB/s, Gravação: 450MB/s, Preto</p>
+      <p>A partir de <data value="480,50">R$ 480,50</data></p>
+      <a href="../PAGES/carrinho.html?produto=sata" class="btn-carrinho">+</a>
+    </article>
 
-  <article class="produto">
-    <img src="" alt="">
-    <p></p>
-    <p>A partir de <data value=""></data></p>
-    <a href="" class="btn-carrinho">+</a>
-  </article>
-</section>
-
-
-<div class="titulos"><h2>Fontes</h2></div>
-
-<section id="principais">
-  <article class="produto">
-    <img src="" alt="">
-    <p></p>
-    <p>A partir de <data value=""></data></p>
-    <a href="" class="btn-carrinho">+</a>
-  </article>
-
-  <article class="produto">
-    <img src="" alt="">
-    <p></p>
-    <p>A partir de <data value=""></data></p>
-    <a href="" class="btn-carrinho">+</a>
-  </article>
-</section>
+    <article class="produto">
+      <img src="../ASSETS/IMG/ssd-nvme.png" alt="SSD XPG S70 Blade, 512GB, M.2 NVMe">
+      <p>SSD XPG S70 Blade, 512GB, M.2 NVMe, PCIe Gen4x4, Leitura: 7200MB/s e Gravação: 2600MB/s, Preto</p>
+      <p>A partir de <data value="909,99">R$ 909,99</data></p>
+      <a href="../PAGES/carrinho.html?produto=nvme" class="btn-carrinho">+</a>
+    </article>
+  </section>
 
 
-<div class="titulos"><h2>Gabinetes</h2></div>
+  <div class="titulos"><h2>Memórias RAM</h2></div>
 
-<section id="principais">
-  <article class="produto">
-    <img src="" alt="">
-    <p></p>
-    <p>A partir de <data value=""></data></p>
-    <a href="" class="btn-carrinho">+</a>
-  </article>
+  <section class="topico">
+    <article class="produto">
+      <img src="../ASSETS/IMG/mm-ram-ddr4.png" alt="Memória RAM Corsair Vengeance Pro, DDR4, 32GB (2x16GB)">
+      <p>Memória RAM Corsair Vengeance Pro, RGB, 32GB (2x16GB), 2666MHz, DDR4, CL16, Preto</p>
+      <p>A partir de <data value="2.378,99">R$ 2.378,99</data></p>
+      <a href="../PAGES/carrinho.html?produto=ddr4" class="btn-carrinho">+</a>
+    </article>
 
-  <article class="produto">
-    <img src="" alt="">
-    <p></p>
-    <p>A partir de <data value=""></data></p>
-    <a href="" class="btn-carrinho">+</a>
-  </article>
-</section>
-
-
-<div class="titulos"><h2>Teclados</h2></div>
-
-<section id="principais">
-  <article class="produto">
-    <img src="" alt="">
-    <p></p>
-    <p>A partir de <data value=""></data></p>
-    <a href="" class="btn-carrinho">+</a>
-  </article>
-
-  <article class="produto">
-    <img src="" alt="">
-    <p></p>
-    <p>A partir de <data value=""></data></p>
-    <a href="" class="btn-carrinho">+</a>
-  </article>
-</section>
+    <article class="produto">
+      <img src="../ASSETS/IMG/mm-ram-ddr5.png" alt="Memória RAM Kingston Fury Beast, DDR5, 32GB (2x16GB)">
+      <p>Memória RAM Kingston Fury Beast, RGB, 32GB (2x16GB), 5600MHz, DDR5, CL36, Branco</p>
+      <p>A partir de <data value="3.899,99">R$ 3.899,99</data></p>
+      <a href="../PAGES/carrinho.html?produto=ddr5" class="btn-carrinho">+</a>
+    </article>
+  </section>
 
 
-<div class="titulos"><h2>Mouses</h2></div>
+  <div class="titulos"><h2>Fontes</h2></div>
 
-<section id="principais">
-  <article class="produto">
-    <img src="" alt="">
-    <p></p>
-    <p>A partir de <data value=""></data></p>
-    <a href="" class="btn-carrinho">+</a>
-  </article>
+  <section class="topico">
+    <article class="produto">
+      <img src="../ASSETS/IMG/fonte-kyber.png" alt="Fonte De Alimentação Gamer Xpg, 850w, Bivolt">
+      <p>Fonte De Alimentação Gamer Xpg Kyber, 850w, 80 Plus Gold, Bivolt, Preto</p>
+      <p>A partir de <data value="623,92">R$ 623,92</data></p>
+      <a href="../PAGES/carrinho.html?produto=kyber" class="btn-carrinho">+</a>
+    </article>
 
-  <article class="produto">
-    <img src="" alt="">
-    <p></p>
-    <p>A partir de <data value=""></data></p>
-    <a href="" class="btn-carrinho">+</a>
-  </article>
-</section>
-
-
-<div class="titulos"><h2>Monitores</h2></div>
-
-<section id="principais">
-  <article class="produto">
-    <img src="" alt="">
-    <p></p>
-    <p>A partir de <data value=""></data></p>
-    <a href="" class="btn-carrinho">+</a>
-  </article>
-
-  <article class="produto">
-    <img src="" alt="">
-    <p></p>
-    <p>A partir de <data value=""></data></p>
-    <a href="" class="btn-carrinho">+</a>
-  </article>
-</section>
+    <article class="produto">
+      <img src="../ASSETS/IMG/fonte-rm1200e.png" alt="Fonte De Alimentação Corsair Rm1200e 1200w">
+      <p>Fonte De Alimentação Corsair Rm1200e 1200w Atx Modular Cp-9020258-br 80 Plus Gold Cybenetics Platinum Bivolt Preto</p>
+      <p>A partir de <data value="4.642,82">R$ 4.642,82</data></p>
+      <a href="../PAGES/carrinho.html?produto=rm1200e" class="btn-carrinho">+</a>
+    </article>
+  </section>
 
 
-<div class="titulos"><h2>Notebooks</h2></div>
+  <div class="titulos"><h2>Gabinetes</h2></div>
 
-<section id="principais">
-  <article class="produto">
-    <img src="" alt="">
-    <p></p>
-    <p>A partir de <data value=""></data></p>
-    <a href="" class="btn-carrinho">+</a>
-  </article>
+  <section class="topico">
+    <article class="produto">
+      <img src="../ASSETS/IMG/gabinete-kalkan-asgard.png" alt="Gabinete Gamer Kalkan Asgard, Mid Tower, ATX">
+      <p>Gabinete Gamer Kalkan Asgard, Mid Tower, ATX, Lateral em Vidro Temperado, Preto</p>
+      <p>A partir de <data value="329,99">R$ 329,99</data></p>
+      <a href="../PAGES/carrinho.html?produto=kalkan" class="btn-carrinho">+</a>
+    </article>
 
-  <article class="produto">
-    <img src="" alt="">
-    <p></p>
-    <p>A partir de <data value=""></data></p>
-    <a href="" class="btn-carrinho">+</a>
-  </article>
-</section>
+    <article class="produto">
+      <img src="../ASSETS/IMG/gabinete-office-husky.png" alt="Gabinete Office Husky 200, Micro ATX, Mini ATX">
+      <p>Gabinete Office Husky 200, Micro ATX, Mini ATX, Preto</p>
+      <p>A partir de <data value="69,99">R$ 69,99</data></p>
+      <a href="../PAGES/carrinho.html?produto=husky" class="btn-carrinho">+</a>
+    </article>
+  </section>
 
+  <div class="titulos"><h2>Montados</h2></div>
 
-<div class="titulos"><h2>PCs Montados</h2></div>
+  <section class="topico">
+    <article class="produto">
+      <img src="../ASSETS/IMG/pc-gamer.png" alt="PC Gamer Completo Ryzen 5 5600gt, 16gb Ddr4, SSD 480GB, 500w">
+      <p>PC Gamer Completo Ryzen 5 5600gt, 16gb Ddr4, SSD 480GB, 500w 80 Plus</p>
+      <p>A partir de <data value="3.788,51">R$ 3.788,51</data></p>
+      <a href="../PAGES/carrinho.html?produto=pc-gamer" class="btn-carrinho">+</a>
+    </article>
 
-<section id="principais">
-  <article class="produto">
-    <img src="" alt="">
-    <p></p>
-    <p>A partir de <data value=""></data></p>
-    <a href="" class="btn-carrinho">+</a>
-  </article>
+    <article class="produto">
+      <img src="../ASSETS/IMG/notebook-gamer.png" alt="Notebook Gamer Lenovo Legion 5i Intel Core Ultra 7 255hx 16gb 1TB SSD RTX 5060 WINDOWS 11 15.1&quot;">
+      <p>Notebook Gamer Lenovo Legion 5i Intel Core Ultra 7 255hx 16gb 1TB SSD RTX 5060 WINDOWS 11 15.1"</p>
+      <p>A partir de <data value="13.599,99">R$ 13.599,99</data></p>
+      <a href="../PAGES/carrinho.html?produto=notebook-gamer" class="btn-carrinho">+</a>
+    </article>
 
-  <article class="produto">
-    <img src="" alt="">
-    <p></p>
-    <p>A partir de <data value=""></data></p>
-    <a href="" class="btn-carrinho">+</a>
-  </article>
-</section>
+    <article class="produto">
+      <img src="../ASSETS/IMG/pc-simples.png" alt="Computador Completo Intel Core i5 16gb SSD 240 Gb Monitor LED 19&quot; W10">
+      <p>Computador Completo Intel Core i5 16gb SSD 240 Gb Monitor LED 19 W10</p>
+      <p>A partir de <data value="1.327,74">R$ 1.327,74</data></p>
+      <a href="../PAGES/carrinho.html?produto=pc-simples" class="btn-carrinho">+</a>
+    </article>
+
+    <article class="produto">
+      <img src="../ASSETS/IMG/notebook-simples.png" alt="Notebook Positivo Vision C14 Intel® Celeron® WINDOWS 11 Home 4gb 128GB Emmc 14” Lumina Bar Cinza - Inclui Microsoft 365">
+      <p>Notebook Positivo Vision C14 Intel® Celeron® WINDOWS 11 Home 4gb 128GB Emmc 14” Lumina Bar Cinza - Inclui Microsoft 365</p>
+      <p>A partir de <data value="1.994,05">R$ 1.994,05</data></p>
+      <a href="../PAGES/carrinho.html?produto=notebook-simples" class="btn-carrinho">+</a>
+    </article>
+  </section>
 
   <!-- RODAPE -->
   <footer>
