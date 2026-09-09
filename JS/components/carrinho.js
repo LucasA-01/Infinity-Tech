@@ -32,9 +32,8 @@ const produtos = {
 
 
 // Pega o produto da URL
-const url = new URLSearchParams(window.location.search);
-const produtoSelecionado = url.get("produto");
-const produto = produtos[produtoSelecionado];
+const url = new URLSearchParams(location.search).get('produto')
+const produto = produtos[url];
 
 
 // Coloca as informações na página
