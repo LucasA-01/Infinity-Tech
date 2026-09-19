@@ -14,10 +14,11 @@
   --cor-fundo-menu:   #000000;
   --cor-fonte-hover:  #cccccc;
   --cor-fundo-suave:  #504f4f;
-  --cor-fonte-link:   #0057c9;
+  --cor-fonte-link:   #848485;
   --cor-borda:        #a1a1a1;
   --cor-card:         #3d3d3d;
   --cor-sombra:       #aaaaaa;
+  --cor-input:        #303030;
   --fonte-titulo:     'Bebas Neue', arial, sans-serif;
   --fonte-navegacao:  'Montserrat', arial, sans-serif;
   --fonte-texto:      'Roboto', arial, sans-serif;
@@ -31,10 +32,11 @@ body.light {
   --cor-fonte-suave:  #1d1d1d;
   --cor-fundo-suave:  #757575;
   --cor-fonte-corpo:  #212121;
-  --cor-fonte-hover:  #7c7b7b;
+  --cor-fonte-hover:  #a8a8a8;
   --cor-card:         #dadada;
   --cor-borda:        #000000;
   --cor-sombra:       #000000;
+  --cor-input:        #c0bebe;
 }
 
 html.dislexo{
@@ -237,7 +239,7 @@ data {
 
 /* RODAPE */
   footer{
-    margin-top: 5rem;
+    margin-top: 8rem;
     padding-top: 2rem;
     padding-bottom: 5rem;
     background-color: var(--cor-rodape);

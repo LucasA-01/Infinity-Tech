@@ -1,3 +1,7 @@
+body {
+    overflow: hidden;
+}
+
 .area-login {
     display: flex;
     justify-content: center;        
@@ -45,7 +49,7 @@ input {
     margin-bottom: 18px;
     border: 1px solid var(--cor-fonte-suave);
     border-radius: 6px;
-    background-color: var(--cor-fundo);
+    background-color: var(--cor-input);
     font-size: 15px;
 }
 
@@ -70,4 +74,26 @@ input:focus {
 
 .btn-formulario:hover {
     background-color: var(--cor-fundo-suave);
+}
+
+
+a {
+    color: var(--cor-fonte-link);
+}
+
+a:hover {
+    color: var(--cor-fonte-corpo);
+}
+
+#sucesso {
+    background-color: var(--cor-card);
+    border-radius: 10px;
+    position: fixed;
+    padding: 1vw;
+    border: 2px solid var(--cor-borda);
+}
+
+#sucesso img {
+    width: 4rem;
+    display: flex;
 }
