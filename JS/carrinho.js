@@ -267,16 +267,33 @@ else {
     document.querySelector("#carrinho-vazio").style.display = "block";
 }
 
-// Fiz um pequeno bloqueador, para garantir que o usuário queira realizar a compra
-btnFinalizar.addEventListener('click', () => {
-    const confirmarPagamento = confirm("Tem certeza que deseja confirmar o pagamento?");
+const pagamento = document.querySelector('#pagamento')
+let enviou = 0;
+
+document.querySelector('#pagar').addEventListener('click', () => {
+
+    pagamento.classList.add('on')
     
-    if(confirmarPagamento) {
-        alert("Pagamento realizado com sucesso. Seu produto chegará em breve");
-        document.querySelector("#menu-carrinho").style.display = "none";
-        document.querySelector("#carrinho-vazio").style.display = "block";
+    if (enviou > 0) {
+        pagamento.innerHTML = `<img src="../ASSETS/ICON/sucesso.png" alt="Ícone de sucesso"><br> <p>O pagamento já foi realizado! <br> Seu produto chegará em breve.</p>`
+        pagamento.classList.add('on')
+        
+        setTimeout(() => {
+            pagamento.classList.remove('on')
+        }, 2000)
     }
-    else {
-        alert("Pagamento cancelado");
-    }
+})
+
+document.querySelector('#btn-cancelar').addEventListener('click', () => {
+    pagamento.classList.remove('on')
+})
+
+document.querySelector('#btn-enviar').addEventListener('click', () => {
+    pagamento.innerHTML = `<img src="../ASSETS/ICON/sucesso.png" alt="Ícone de sucesso"><br> <p>Pagamento realizado com sucesso! <br> Seu produto chegará em breve.</p>`
+    
+    enviou = 1
+    
+    setTimeout(() => {
+        pagamento.classList.remove('on')
+    }, 2000);
 })

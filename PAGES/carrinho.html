@@ -82,9 +82,45 @@
       <aside class="resumo">
         <h2></h2>
         <p>Subtotal: <data value=""></data></p>
-        <p>Frete: <data value="">R$ 20</data></p>
+        <p>Frete: <data value="">R$ 20,00</data></p>
         <p id="total">Total: <data value=""></data></p>
         <button id="pagar">Finalizar compra</button>
+         <div id="pagamento" class="popup">
+              <form class="form-pagamento">
+
+                  <h2>Finalizar compra</h2>
+
+                  <label for="endereco">CEP</label>
+                  <input 
+                      type="text" 
+                      id="endereco" 
+                      placeholder="00000-000"
+                      required><br><br>
+
+                  <label>Método de pagamento:</label>
+
+                  <div class="metodos-pagamento">
+                      <label>
+                          <input type="radio" name="pagamento" value="pix" required>
+                          PIX
+                      </label>
+
+                      <label>
+                          <input type="radio" name="pagamento" value="cartao">
+                          Cartão
+                      </label>
+
+                      <label>
+                          <input type="radio" name="pagamento" value="boleto">
+                          Boleto
+                      </label>
+                  </div>
+
+                  <button id="btn-enviar" type="submit">Enviar</button>
+                  <button id="btn-cancelar">Cancelar</button>
+
+              </form>
+          </div>
       </aside>
     </section>
   </section>

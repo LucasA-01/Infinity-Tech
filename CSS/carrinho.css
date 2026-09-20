@@ -73,6 +73,44 @@ data{
     border-radius: 5px;
 }
 
+#pagamento {
+    background-color: var(--cor-card);
+    border-radius: 10px;
+    position: absolute;
+    padding: 1vw;
+    border: 2px solid var(--cor-borda);
+    display: none;
+    justify-self: center;
+    align-self: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pagamento.on {
+    display: flex;
+}
+
+#pagamento img {
+    width: 4rem;
+}
+
+#btn-enviar, #btn-cancelar {
+    background-color: var(--cor-topo);
+    color: var(--cor-fonte-topo);
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.25s;
+}
+
+#btn-enviar:hover{
+    background-color: var(--cor-fundo-suave);
+}
+
+#btn-cancelar:hover {
+    background-color: brown;
+}
+
 #carrinho-vazio {
     display: none;
     text-align: center;

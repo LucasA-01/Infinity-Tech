@@ -239,7 +239,7 @@ data {
 
 /* RODAPE */
   footer{
-    margin-top: 8rem;
+    margin-top: 25rem;
     padding-top: 2rem;
     padding-bottom: 5rem;
     background-color: var(--cor-rodape);
