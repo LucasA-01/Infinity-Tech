@@ -1,23 +1,29 @@
 const cadastro = document.querySelector('#cadastro');
-const mensagemSucesso = document.querySelector('#sucesso'); // Elemento da mensagem
+const emailC = 'lucas.alves.man@gmail.com'
+const senhaC = '1234'
+const mensagemSucesso = document.querySelector('#sucesso');
+const erro = document.querySelector('#erro')
 
-mensagemSucesso.style.display = 'none';
+mensagemSucesso.style.display = 'none'
 
 cadastro.addEventListener('submit', (evento) => {
-  evento.preventDefault(); 
-
-  if (formulario.checkValidity()) {
-    // 1. Opcional: Enviar os dados para o servidor aqui (usando fetch)
+    evento.preventDefault()
     
-    // 2. Exibe a mensagem de sucesso (revelando o elemento oculto)
-    mensagemSucesso.style.display = 'block';
-    mensagemSucesso.src = '../ASSETS/ICON/sucesso.png';
+    let tentEmail = document.querySelector('#email').value
+    let tentSenha = document.querySelector('#senha').value
 
-    // 3. Limpa os campos do formulário após o envio
-    formulario.reset();
-  } else {
-    // Esconde a mensagem de sucesso caso ele tente enviar errado depois
+    if (emailC == tentEmail && senhaC == tentSenha) {
+        mensagemSucesso.style.display = 'block';
+        mensagemSucesso.innerHTML = `<img src="../ASSETS/ICON/sucesso.png" alt="Ícone de sucesso">`;
+    }
+    else {
+      erro.textContent = 'Email e/ou senha inserido(s) errado(s).'
+    }
+
+    cadastro.reset();
+
+    setTimeout(() => {
     mensagemSucesso.style.display = 'none';
-    formulario.reportValidity();
-  }
-});
+  }, 1500)
+
+})

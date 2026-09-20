@@ -1,4 +1,4 @@
-body {
+#sucesso body {
     overflow: hidden;
 }
 
@@ -58,22 +58,35 @@ input:focus {
     border-color: var(--cor-fonte-corpo);
 }
 
-.botoes {
+.botoes-formulario {
     display: flex;
     gap: 10px;
     margin-top: 10px;
 }
 
-.btn-formulario {
+.btn-cadastro {
     padding: 12px;
     border-radius: 6px;
     background-color: var(--cor-topo);
-    color: var(--cor-fonte-suave);
+    color: #fff;
+    transition: 0.5s;
+    margin-top: 10px;
+}
+
+.btn-cadastro:hover {
+    background-color: var(--cor-fundo-suave);
+}
+
+.btn-insert {
+    padding: 8px;
+    border-radius: 6px;
+    background-color: #b41919;
+    color: #fff;
     transition: 0.5s;
 }
 
-.btn-formulario:hover {
-    background-color: var(--cor-fundo-suave);
+.btn-insert:hover {
+    background-color: #640e0e;
 }
 
 
@@ -91,9 +104,15 @@ a:hover {
     position: fixed;
     padding: 1vw;
     border: 2px solid var(--cor-borda);
+    display: flex;
+    justify-content: center;
 }
 
 #sucesso img {
     width: 4rem;
-    display: flex;
+}
+
+#erro {
+    color: rgb(196, 19, 19);
+    margin-bottom: 5px;
 }

@@ -17,7 +17,7 @@
       <a href="index.html"><img src="../ASSETS/IMG/Logo.png" alt="Logo do site Infinity Tech" class="logo"></a>
       <nav class="navegacao">
         <ul class="menu">
-          <li><a href="../PAGES/cadastro.html"><img src="../ASSETS/ICON/login.png" alt="Fazer login" class="icon">Login</a></li>
+          <li><a href="../PAGES/login.html"><img src="../ASSETS/ICON/login.png" alt="Fazer login" class="icon">Login</a></li>
           <li><a href="../PAGES/ajuda.html"><img src="../ASSETS/ICON/Ajuda.png" alt="Ajuda e suporte" class="icon"></a></li>
           <li><a href="../PAGES/carrinho.html"><img src="../ASSETS/ICON/Carrinho.png" alt="Carrinho de compras" class="icon"></a></li>
           <li><button><img src="../ASSETS/ICON/tema-escuro.png" class="tema"></button></li>
@@ -44,7 +44,7 @@
             </a>
           </li>
           <li class="item-menu fixed">
-            <a href="../PAGES/cadastro.html">
+            <a href="../PAGES/login.html">
               <span class="icon"><img src="../ASSETS/ICON/login.png" alt="Fazer login"></span>
               <span class="txt-link">Login</span>
             </a>
@@ -62,32 +62,36 @@
   <main class="area-login">
       <div class="formulario">
 
-          <h1>Login</h1>
-          <p>Acesse a sua conta</p>
+          <h1>Cadastro</h1>
+          <p>Preencha seus dados abaixo</p>
+          <div id="erro"></div>
 
-          <form>
+          <form id="cadastro">
 
               <label for="email">E-mail</label>
               <input type="email" id="email" name="email"
-                    placeholder="Digite seu e-mail" required>
+                      placeholder="Digite seu e-mail" required>
 
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha" 
-                   placeholder="Digite sua senha">
+              <label for="senha">Senha:</label>
+              <input type="password" id="senha" name="senha" 
+                      placeholder="Digite sua senha">
 
-            <a href="../PAGES/cadastro.html">Ainda não tem uma conta? Clique aqui</a>
+              <a href="../PAGES/cadastro.html">Ainda não tem uma conta? Clique aqui.</a>
 
-              <div class="botoes">
+              <div>
 
-                  <button type="submit" class="btn-formulario">
-                      Enviar
+                  <button type="submit" class="btn-cadastro" id="cadastrar">
+                      Entrar
                   </button>
 
               </div>
 
           </form>
 
-      </div>
+        </div>
+
+        <div id="sucesso">
+        </div>
   </main>
   </div>
   
@@ -119,5 +123,7 @@
     <script src="../JS/tema.js" defer></script>
     <script src="../JS/fonte.js" defer></script>
     <script src="../JS/nav-lateral.js" defer></script>
+    <script src="../JS/login.js" defer></script>
+
 </body>
 </html>
