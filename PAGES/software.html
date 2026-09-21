@@ -1,237 +1,325 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hardware</title>
-    <link rel="shortcut icon" href="../ASSETS/ICON/Favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/catalogos.css">
-</head>
-<body>
+    <link
+      rel="shortcut icon"
+      href="../ASSETS/ICON/Favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/catalogos.css" />
+  </head>
+  <body>
     <header id="topo">
-    <div class="btn-expandir">
-      <img id="btn-exp" src="../ASSETS/ICON/3bar.png" alt="Botão para expandir a navegação lateral">
+      <div class="btn-expandir">
+        <img
+          id="btn-exp"
+          src="../ASSETS/ICON/3bar.png"
+          alt="Botão para expandir a navegação lateral"
+        />
+      </div>
+      <a href="../index.html"
+        ><img
+          src="../ASSETS/IMG/Logo.png"
+          alt="Logo do site Infinity Tech"
+          class="logo"
+      /></a>
+      <nav class="navegacao">
+        <ul class="menu">
+          <li>
+            <a href="../PAGES/login.html"
+              ><img
+                src="../ASSETS/ICON/login.png"
+                alt="Fazer login"
+                class="icon"
+              />Login</a
+            >
+          </li>
+          <li>
+            <a href="../PAGES/ajuda.html"
+              ><img
+                src="../ASSETS/ICON/Ajuda.png"
+                alt="Ajuda e suporte"
+                class="icon"
+            /></a>
+          </li>
+          <li>
+            <a href="../PAGES/carrinho.html"
+              ><img
+                src="../ASSETS/ICON/Carrinho.png"
+                alt="Carrinho de compras"
+                class="icon"
+            /></a>
+          </li>
+          <li>
+            <button>
+              <img src="../ASSETS/ICON/tema-escuro.png" class="tema" />
+            </button>
+          </li>
+          <li><button class="dislexia">Dislexia</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- NAV/Lateral -->
+    <div id="conteudo-inferior">
+      <aside>
+        <nav class="navegacao-lateral" aria-label="Info">
+          <ul>
+            <li class="item-menu">
+              <a href="../index.html">
+                <span class="icon"
+                  ><img src="../ASSETS/ICON/home.png" alt="Página inicial"
+                /></span>
+                <span class="txt-link">Home</span>
+              </a>
+            </li>
+            <li class="item-menu">
+              <a href="../PAGES/ajuda.html">
+                <span class="icon"
+                  ><img src="../ASSETS/ICON/Ajuda.png" alt="Ajuda e suporte"
+                /></span>
+                <span class="txt-link">Ajuda</span>
+              </a>
+            </li>
+            <li class="item-menu">
+              <a href="../PAGES/login.html">
+                <span class="icon"
+                  ><img src="../ASSETS/ICON/login.png" alt="Fazer login"
+                /></span>
+                <span class="txt-link">Login</span>
+              </a>
+            </li>
+            <li class="item-menu">
+              <a href="../PAGES/carrinho.html">
+                <span class="icon"
+                  ><img
+                    src="../ASSETS/ICON/Carrinho.png"
+                    alt="Carrinho de compras"
+                /></span>
+                <span class="txt-link">Carrinho</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main id="hero">
+        <section class="img-destaque">
+          <img src="../ASSETS/IMG/software-hero.png" alt="" />
+        </section>
+      </main>
     </div>
-    <a href="../index.html"><img src="../ASSETS/IMG/Logo.png" alt="Logo do site Infinity Tech" class="logo"></a>
-    <nav class="navegacao">
-      <ul class="menu">
-        <li><a href="../PAGES/login.html"><img src="../ASSETS/ICON/login.png" alt="Fazer login" class="icon">Login</a></li>
-        <li><a href="../PAGES/ajuda.html"><img src="../ASSETS/ICON/Ajuda.png" alt="Ajuda e suporte" class="icon"></a></li>
-        <li><a href="../PAGES/carrinho.html"><img src="../ASSETS/ICON/Carrinho.png" alt="Carrinho de compras" class="icon"></a></li>
-        <li><button><img src="../ASSETS/ICON/tema-escuro.png" class="tema"></button></li>
-        <li><button class="dislexia">Dislexia</button></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- NAV/Lateral -->
-  <div id="conteudo-inferior">
-  <aside>
-    <nav class="navegacao-lateral" aria-label="Info">
-      <ul>
-        <li class="item-menu">
-          <a href="../index.html">
-            <span class="icon"><img src="../ASSETS/ICON/home.png" alt="Página inicial"></span>
-            <span class="txt-link">Home</span>
-          </a>
-        </li>
-        <li class="item-menu">
-          <a href="../PAGES/ajuda.html">
-            <span class="icon"><img src="../ASSETS/ICON/Ajuda.png" alt="Ajuda e suporte"></span>
-            <span class="txt-link">Ajuda</span>
-          </a>
-        </li>
-        <li class="item-menu">
-          <a href="../PAGES/login.html">
-            <span class="icon"><img src="../ASSETS/ICON/login.png" alt="Fazer login"></span>
-            <span class="txt-link">Login</span>
-          </a>
-        </li>
-        <li class="item-menu">
-          <a href="../PAGES/carrinho.html">
-            <span class="icon"><img src="../ASSETS/ICON/Carrinho.png" alt="Carrinho de compras"></span>
-            <span class="txt-link">Carrinho</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </aside>
+    <!-- CARDS -->
+    <div class="titulos">
+      <h2>Sistemas Operacionais</h2>
+    </div>
 
-  <main id="hero">
-    <section class="img-destaque">
-        <img src="../ASSETS/IMG/software-hero.png" alt="">
+    <section class="topico">
+      <article class="produto">
+        <img src="../ASSETS/IMG/w11-home.png" alt="Windows 11 Home" />
+        <p>Windows 11 Home</p>
+        <p>A partir de <data value="989.99">R$ 989,99</data></p>
+        <a href="../PAGES/carrinho.html?produto=w11-home" class="btn-carrinho"
+          >+</a
+        >
+      </article>
+
+      <article class="produto">
+        <img src="../ASSETS/IMG/w11-pro.png" alt="Windows 11 Pro" />
+        <p>Windows 11 Pro</p>
+        <p>A partir de <data value="799.00">R$ 799,00</data></p>
+        <a href="../PAGES/carrinho.html?produto=w11-pro" class="btn-carrinho"
+          >+</a
+        >
+      </article>
     </section>
-  </main>
-  </div>
 
-  <!-- CARDS -->
-<div class="titulos">
-  <h2>Sistemas Operacionais</h2>
-</div>
+    <div class="titulos">
+      <h2>Produtividade</h2>
+    </div>
 
-<section class="topico">
+    <section class="topico">
+      <article class="produto">
+        <img src="../ASSETS/IMG/m365-personal.png" alt="Microsoft Office 365" />
+        <p>Microsoft Office 365 Personal</p>
+        <p>A partir de <data value="509.00">R$ 509,00/ano</data></p>
+        <a href="../PAGES/carrinho.html?produto=m365" class="btn-carrinho">+</a>
+      </article>
 
-  <article class="produto">
-    <img src="../ASSETS/IMG/w11-home.png" alt="Windows 11 Home">
-    <p>Windows 11 Home</p>
-    <p>A partir de <data value="989.99">R$ 989,99</data></p>
-    <a href="../PAGES/carrinho.html?produto=w11-home" class="btn-carrinho">+</a>
-  </article>
+      <article class="produto">
+        <img
+          src="../ASSETS/IMG/office-24.png"
+          alt="Pacote office Professional Plus 2024"
+        />
+        <p>Pacote office Professional Plus 2024</p>
+        <p>A partir de <data value="0.00">Grátis</data></p>
+        <a href="../PAGES/carrinho.html?produto=officepp24" class="btn-carrinho"
+          >+</a
+        >
+      </article>
+    </section>
 
-  <article class="produto">
-    <img src="../ASSETS/IMG/w11-pro.png" alt="Windows 11 Pro">
-    <p>Windows 11 Pro</p>
-    <p>A partir de <data value="799.00">R$ 799,00</data></p>
-    <a href="../PAGES/carrinho.html?produto=w11-pro" class="btn-carrinho">+</a>
-  </article>
+    <div class="titulos">
+      <h2>Design e Edição</h2>
+    </div>
 
-</section>
+    <section class="topico">
+      <article class="produto">
+        <img src="../ASSETS/IMG/photoshop.png" alt="Adobe Photoshop" />
+        <p>Adobe Photoshop</p>
+        <p>A partir de <data value="125.00">R$ 125,00</data></p>
+        <a href="../PAGES/carrinho.html?produto=photoshop" class="btn-carrinho"
+          >+</a
+        >
+      </article>
 
-<div class="titulos">
-  <h2>Produtividade</h2>
-</div>
+      <article class="produto">
+        <img src="../ASSETS/IMG/illustrator.png" alt="Adobe Illustrator" />
+        <p>Adobe Illustrator</p>
+        <p>A partir de <data value="104.00">R$ 104,00</data></p>
+        <a
+          href="../PAGES/carrinho.html?produto=illustrator"
+          class="btn-carrinho"
+          >+</a
+        >
+      </article>
 
-<section class="topico">
+      <article class="produto">
+        <img src="../ASSETS/IMG/premiere.png" alt="Adobe Premiere CC 2025" />
+        <p>Adobe Premiere CC 2025</p>
+        <p>A partir de <data value="349.00">R$ 349,00</data></p>
+        <a
+          href="../PAGES/carrinho.html?produto=premierecc25"
+          class="btn-carrinho"
+          >+</a
+        >
+      </article>
 
-  <article class="produto">
-    <img src="../ASSETS/IMG/m365-personal.png" alt="Microsoft Office 365">
-    <p>Microsoft Office 365 Personal</p>
-    <p>A partir de <data value="509.00">R$ 509,00/ano</data></p>
-    <a href="../PAGES/carrinho.html?produto=m365" class="btn-carrinho">+</a>
-  </article>
+      <article class="produto">
+        <img
+          src="../ASSETS/IMG/after-effects.png"
+          alt="Adobe After Effects 2024"
+        />
+        <p>Adobe After Effects 2024</p>
+        <p>A partir de <data value="104.00">R$ 104,00</data></p>
+        <a href="../PAGES/carrinho.html?produto=ae24" class="btn-carrinho">+</a>
+      </article>
+    </section>
 
-  <article class="produto">
-    <img src="../ASSETS/IMG/office-24.png" alt="Pacote office Professional Plus 2024">
-    <p>Pacote office Professional Plus 2024</p>
-    <p>A partir de <data value="0.00">Grátis</data></p>
-    <a href="../PAGES/carrinho.html?produto=officepp24" class="btn-carrinho">+</a>
-  </article>
+    <div class="titulos">
+      <h2>Automação e desenvolvimento com IA</h2>
+    </div>
 
-</section>
+    <section class="topico">
+      <article class="produto">
+        <img src="../ASSETS/IMG/make.png" alt="Make Teams" />
+        <p>Make Teams</p>
+        <p>A partir de <data value="148.66">R$ 148,66/mês</data></p>
+        <a href="../PAGES/carrinho.html?produto=make" class="btn-carrinho">+</a>
+      </article>
 
-<div class="titulos">
-  <h2>Design e Edição</h2>
-</div>
+      <article class="produto">
+        <img src="../ASSETS/IMG/zapier.png" alt="Zapier" />
+        <p>Zapier Profissional</p>
+        <p>A partir de <data value="102.47">R$ 102,47/mês</data></p>
+        <a href="../PAGES/carrinho.html?produto=zapier" class="btn-carrinho"
+          >+</a
+        >
+      </article>
 
-<section class="topico">
+      <article class="produto">
+        <img src="../ASSETS/IMG/n8n.png" alt="n8n IA" />
+        <p>n8n IA Starter</p>
+        <p>A partir de <data value="150.00">R$ 150,00/mês</data></p>
+        <a href="../PAGES/carrinho.html?produto=n8n" class="btn-carrinho">+</a>
+      </article>
 
-  <article class="produto">
-    <img src="../ASSETS/IMG/photoshop.png" alt="Adobe Photoshop">
-    <p>Adobe Photoshop</p>
-    <p>A partir de <data value="125.00">R$ 125,00</data></p>
-    <a href="../PAGES/carrinho.html?produto=photoshop" class="btn-carrinho">+</a>
-  </article>
+      <article class="produto">
+        <img src="../ASSETS/IMG/uipath.png" alt="UiPath" />
+        <p>UiPath Inc</p>
+        <p>A partir de <data value="200.87">R$ 200,87/mês</data></p>
+        <a href="../PAGES/carrinho.html?produto=uipath" class="btn-carrinho"
+          >+</a
+        >
+      </article>
+    </section>
 
-  <article class="produto">
-    <img src="../ASSETS/IMG/illustrator.png" alt="Adobe Illustrator">
-    <p>Adobe Illustrator</p>
-    <p>A partir de <data value="104.00">R$ 104,00</data></p>
-    <a href="../PAGES/carrinho.html?produto=illustrator" class="btn-carrinho">+</a>
-  </article>
+    <div class="titulos">
+      <h2>Engenharia e Arquitetura</h2>
+    </div>
 
-  <article class="produto">
-    <img src="../ASSETS/IMG/premiere.png" alt="Adobe Premiere CC 2025">
-    <p>Adobe Premiere CC 2025</p>
-    <p>A partir de <data value="349.00">R$ 349,00</data></p>
-    <a href="../PAGES/carrinho.html?produto=premierecc25" class="btn-carrinho">+</a>
-  </article>
+    <section class="topico">
+      <article class="produto">
+        <img src="../ASSETS/IMG/autocad.png" alt="Autodesk AutoCAD" />
+        <p>Autodesk AutoCAD</p>
+        <p>A partir de <data value="1299.00">R$ 1.299,00</data></p>
+        <a href="../PAGES/carrinho.html?produto=autocad" class="btn-carrinho"
+          >+</a
+        >
+      </article>
 
-  <article class="produto">
-    <img src="../ASSETS/IMG/after-effects.png" alt="Adobe After Effects 2024">
-    <p>Adobe After Effects 2024</p>
-    <p>A partir de <data value="104.00">R$ 104,00</data></p>
-    <a href="../PAGES/carrinho.html?produto=ae24" class="btn-carrinho">+</a>
-  </article>
+      <article class="produto">
+        <img src="../ASSETS/IMG/revit.png" alt="Autodesk Revit" />
+        <p>Autodesk Revit</p>
+        <p>A partir de <data value="1499.00">R$ 1.499,00</data></p>
+        <a href="../PAGES/carrinho.html?produto=revit" class="btn-carrinho"
+          >+</a
+        >
+      </article>
+    </section>
 
-</section>
+    <!-- RODAPE -->
+    <footer>
+      <aside>
+        <h3>Atendimento</h3>
+        <ul>
+          <li><a href="../PAGES/ajuda.html">FAC</a></li>
+          <li><a href="">SAC</a></li>
+        </ul>
+      </aside>
 
-<div class="titulos">
-  <h2>Automação e desenvolvimento com IA</h2>
-</div>
+      <section>
+        <h3>Mídias sociais:</h3>
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/infinity.tech.oficial?stkn=ZWI5dGs0c3RweG5q"
+              ><img
+                src="../ASSETS/ICON/Instagram_icon.png"
+                alt="Instagram"
+                class="icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https://x.com/LucasAl80391541"
+              ><img
+                src="../ASSETS/ICON/twitter-icon.png"
+                alt="Twitter"
+                class="icon"
+            /></a>
+          </li>
+        </ul>
+      </section>
 
-<section class="topico">
+      <section>
+        <a href=""
+          ><img
+            src="../ASSETS/IMG/Logo.png"
+            alt="Logo do site Infinity Tech"
+            class="logo"
+        /></a>
+        <h2>INFINITY TECH®</h2>
+        <h2>Site desenvolvido por: Lucas Alves</h2>
+      </section>
+    </footer>
 
-  <article class="produto">
-    <img src="../ASSETS/IMG/make.png" alt="Make Teams">
-    <p>Make Teams</p>
-    <p>A partir de <data value="148.66">R$ 148,66/mês</data></p>
-    <a href="../PAGES/carrinho.html?produto=make" class="btn-carrinho">+</a>
-  </article>
-
-  <article class="produto">
-    <img src="../ASSETS/IMG/zapier.png" alt="Zapier">
-    <p>Zapier Profissional</p>
-    <p>A partir de <data value="102.47">R$ 102,47/mês</data></p>
-    <a href="../PAGES/carrinho.html?produto=zapier" class="btn-carrinho">+</a>
-  </article>
-
-  <article class="produto">
-    <img src="../ASSETS/IMG/n8n.png" alt="n8n IA">
-    <p>n8n IA Starter</p>
-    <p>A partir de <data value="150.00">R$ 150,00/mês</data></p>
-    <a href="../PAGES/carrinho.html?produto=n8n" class="btn-carrinho">+</a>
-  </article>
-
-  <article class="produto">
-    <img src="../ASSETS/IMG/uipath.png" alt="UiPath">
-    <p>UiPath Inc</p>
-    <p>A partir de <data value="200.87">R$ 200,87/mês</data></p>
-    <a href="../PAGES/carrinho.html?produto=uipath" class="btn-carrinho">+</a>
-  </article>
-
-</section>
-
-<div class="titulos">
-  <h2>Engenharia e Arquitetura</h2>
-</div>
-
-<section class="topico">
-
-  <article class="produto">
-    <img src="../ASSETS/IMG/autocad.png" alt="Autodesk AutoCAD">
-    <p>Autodesk AutoCAD</p>
-    <p>A partir de <data value="1299.00">R$ 1.299,00</data></p>
-    <a href="../PAGES/carrinho.html?produto=autocad" class="btn-carrinho">+</a>
-  </article>
-
-  <article class="produto">
-    <img src="../ASSETS/IMG/revit.png" alt="Autodesk Revit">
-    <p>Autodesk Revit</p>
-    <p>A partir de <data value="1499.00">R$ 1.499,00</data></p>
-    <a href="../PAGES/carrinho.html?produto=revit" class="btn-carrinho">+</a>
-  </article>
-
-</section>
-
-  <!-- RODAPE -->
-  <footer>
-    <aside>
-      <h3>Atendimento</h3>
-      <ul>
-        <li><a href="../PAGES/ajuda.html">FAC</a></li>
-        <li><a href="">SAC</a></li>
-      </ul>
-    </aside>
-    
-  <section>
-    <h3>Mídias sociais:</h3>
-    <ul>
-      <li><a href=""><img src="../ASSETS/ICON/Instagram_icon.png" alt="Instagram" class="icon"></a></li>
-      <li><a href=""><img src="../ASSETS/ICON/twitter-icon.png" alt="Twitter" class="icon"></a></li>
-    </ul>
-  </section>
-
-  <section>
-    <a href=""><img src="../ASSETS/IMG/Logo.png" alt="Logo do site Infinity Tech" class="logo"></a>
-    <h2>INFINITY TECH®</h2>
-    <h2>Site desenvolvido por: Lucas Alves e Valentin Vieira</h2>
-  </section>
-  </footer>
-
-  <!-- JS -->
+    <!-- JS -->
     <script src="../JS/nav-lateral.js" defer></script>
     <script src="../JS/tema.js" defer></script>
     <script src="../JS/fonte.js" defer></script>
-</body>
+  </body>
 </html>

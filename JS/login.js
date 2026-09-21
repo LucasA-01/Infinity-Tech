@@ -1,29 +1,27 @@
-const cadastro = document.querySelector('#cadastro');
-const emailC = 'lucas.alves.man@gmail.com'
-const senhaC = '1234'
-const mensagemSucesso = document.querySelector('#sucesso');
-const erro = document.querySelector('#erro')
+const cadastro = document.querySelector("#cadastro");
+const emailC = "lucas.alves.man@gmail.com";
+const senhaC = "1234";
+const mensagemSucesso = document.querySelector("#sucesso");
+const erro = document.querySelector("#erro");
 
-mensagemSucesso.style.display = 'none'
+mensagemSucesso.style.display = "none";
 
-cadastro.addEventListener('submit', (evento) => {
-    evento.preventDefault()
-    
-    let tentEmail = document.querySelector('#email').value
-    let tentSenha = document.querySelector('#senha').value
+cadastro.addEventListener("submit", (evento) => {
+  evento.preventDefault();
 
-    if (emailC == tentEmail && senhaC == tentSenha) {
-        mensagemSucesso.style.display = 'block';
-        mensagemSucesso.innerHTML = `<img src="../ASSETS/ICON/sucesso.png" alt="Ícone de sucesso">`;
-    }
-    else {
-      erro.textContent = 'Email e/ou senha inserido(s) errado(s).'
-    }
+  let tentEmail = document.querySelector("#email").value;
+  let tentSenha = document.querySelector("#senha").value;
 
-    cadastro.reset();
+  if (emailC == tentEmail && senhaC == tentSenha) {
+    mensagemSucesso.style.display = "block";
+    mensagemSucesso.innerHTML = `<img src="../ASSETS/ICON/sucesso.png" alt="Ícone de sucesso">`;
+  } else {
+    erro.textContent = "Email e/ou senha inserido(s) errado(s).";
+  }
 
-    setTimeout(() => {
-    mensagemSucesso.style.display = 'none';
-  }, 1500)
+  cadastro.reset();
 
-})
+  setTimeout(() => {
+    mensagemSucesso.style.display = "none";
+  }, 1500);
+});

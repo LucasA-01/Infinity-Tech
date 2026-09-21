@@ -1,161 +1,228 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carrinho de Compras</title>
-  <link rel="shortcut icon" href="../ASSETS/ICON/Favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="../CSS/style.css">
-  <link rel="stylesheet" href="../CSS/carrinho.css">
-</head>
-<body>
-  <!-- TOPO/NAV -->
-  <header id="topo">
-    <div class="btn-expandir">
-      <img id="btn-exp" src="../ASSETS/ICON/3bar.png" alt="Botão para expandir a navegação lateral">
-    </div>
-    <a href="index.html"><img src="../ASSETS/IMG/Logo.png" alt="Logo do site Infinity Tech" class="logo"></a>
-    <nav class="navegacao">
-      <ul class="menu">
-        <li><a href="../PAGES/login.html"><img src="../ASSETS/ICON/login.png" alt="Fazer login" class="icon">Login</a></li>
-        <li><a href="../PAGES/ajuda.html"><img src="../ASSETS/ICON/Ajuda.png" alt="Ajuda e suporte" class="icon"></a></li>
-        <li><a href="carrinho.html"><img src="../ASSETS/ICON/Carrinho.png" alt="Carrinho de compras" class="icon"></a></li>
-        <li><button><img src="../ASSETS/ICON/tema-escuro.png" class="tema"></button></li>
-        <li><button class="dislexia">Dislexia</button></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho de Compras</title>
+    <link
+      rel="shortcut icon"
+      href="../ASSETS/ICON/Favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/carrinho.css" />
+  </head>
+  <body>
+    <!-- TOPO/NAV -->
+    <header id="topo">
+      <div class="btn-expandir">
+        <img
+          id="btn-exp"
+          src="../ASSETS/ICON/3bar.png"
+          alt="Botão para expandir a navegação lateral"
+        />
+      </div>
+      <a href="index.html"
+        ><img
+          src="../ASSETS/IMG/Logo.png"
+          alt="Logo do site Infinity Tech"
+          class="logo"
+      /></a>
+      <nav class="navegacao">
+        <ul class="menu">
+          <li>
+            <a href="../PAGES/login.html"
+              ><img
+                src="../ASSETS/ICON/login.png"
+                alt="Fazer login"
+                class="icon"
+              />Login</a
+            >
+          </li>
+          <li>
+            <a href="../PAGES/ajuda.html"
+              ><img
+                src="../ASSETS/ICON/Ajuda.png"
+                alt="Ajuda e suporte"
+                class="icon"
+            /></a>
+          </li>
+          <li>
+            <a href="carrinho.html"
+              ><img
+                src="../ASSETS/ICON/Carrinho.png"
+                alt="Carrinho de compras"
+                class="icon"
+            /></a>
+          </li>
+          <li>
+            <button>
+              <img src="../ASSETS/ICON/tema-escuro.png" class="tema" />
+            </button>
+          </li>
+          <li><button class="dislexia">Dislexia</button></li>
+        </ul>
+      </nav>
+    </header>
 
-<!-- NAV/Lateral -->
-  <div id="conteudo-inferior">
-  <aside>
-    <nav class="navegacao-lateral" aria-label="Info">
-      <ul>
-        <li class="item-menu">
-          <a href="../index.html">
-            <span class="icon"><img src="../ASSETS/ICON/home.png" alt="Página inicial"></span>
-            <span class="txt-link">Home</span>
-          </a>
-        </li>
-        <li class="item-menu">
-          <a href="../PAGES/ajuda.html">
-            <span class="icon"><img src="../ASSETS/ICON/Ajuda.png" alt="Ajuda e suporte"></span>
-            <span class="txt-link">Ajuda</span>
-          </a>
-        </li>
-        <li class="item-menu">
-          <a href="../PAGES/login.html">
-            <span class="icon"><img src="../ASSETS/ICON/login.png" alt="Fazer login"></span>
-            <span class="txt-link">Login</span>
-          </a>
-        </li>
-        <li class="item-menu fixed">
-          <a href="../PAGES/carrinho.html">
-            <span class="icon"><img src="../ASSETS/ICON/Carrinho.png" alt="Carrinho de compras"></span>
-            <span class="txt-link">Carrinho</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </aside>
-
-  <!-- HERO -->
-  <main id="hero">
-    <h1>Carrinho de compras</h1>
-  </main>
-  </div>
-
-  <!-- CARDS -->
-  <section id="menu-carrinho">
-    <section id="cards">
-      <article class="card">
-        <img src="" alt="">
-        <div class="descricao">
-          <h2></h2>
-          <p></p>
-          <data value=""></data>
-        </div>
-      </article>
-    </section>
-  
-    <section id="final">
-      <aside class="resumo">
-        <h2></h2>
-        <p>Subtotal: <data value=""></data></p>
-        <p>Frete: <data value="">R$ 20,00</data></p>
-        <p id="total">Total: <data value=""></data></p>
-        <button id="pagar">Finalizar compra</button>
-         <div id="pagamento" class="popup">
-              <form class="form-pagamento">
-
-                  <h2>Finalizar compra</h2>
-
-                  <label for="endereco">CEP</label>
-                  <input 
-                      type="text" 
-                      id="endereco" 
-                      placeholder="00000-000"
-                      required><br><br>
-
-                  <label>Método de pagamento:</label>
-
-                  <div class="metodos-pagamento">
-                      <label>
-                          <input type="radio" name="pagamento" value="pix" required>
-                          PIX
-                      </label>
-
-                      <label>
-                          <input type="radio" name="pagamento" value="cartao">
-                          Cartão
-                      </label>
-
-                      <label>
-                          <input type="radio" name="pagamento" value="boleto">
-                          Boleto
-                      </label>
-                  </div>
-
-                  <button id="btn-enviar" type="submit">Enviar</button>
-                  <button id="btn-cancelar">Cancelar</button>
-
-              </form>
-          </div>
+    <!-- NAV/Lateral -->
+    <div id="conteudo-inferior">
+      <aside>
+        <nav class="navegacao-lateral" aria-label="Info">
+          <ul>
+            <li class="item-menu">
+              <a href="../index.html">
+                <span class="icon"
+                  ><img src="../ASSETS/ICON/home.png" alt="Página inicial"
+                /></span>
+                <span class="txt-link">Home</span>
+              </a>
+            </li>
+            <li class="item-menu">
+              <a href="../PAGES/ajuda.html">
+                <span class="icon"
+                  ><img src="../ASSETS/ICON/Ajuda.png" alt="Ajuda e suporte"
+                /></span>
+                <span class="txt-link">Ajuda</span>
+              </a>
+            </li>
+            <li class="item-menu">
+              <a href="../PAGES/login.html">
+                <span class="icon"
+                  ><img src="../ASSETS/ICON/login.png" alt="Fazer login"
+                /></span>
+                <span class="txt-link">Login</span>
+              </a>
+            </li>
+            <li class="item-menu fixed">
+              <a href="../PAGES/carrinho.html">
+                <span class="icon"
+                  ><img
+                    src="../ASSETS/ICON/Carrinho.png"
+                    alt="Carrinho de compras"
+                /></span>
+                <span class="txt-link">Carrinho</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </aside>
+
+      <!-- HERO -->
+      <main id="hero">
+        <h1>Carrinho de compras</h1>
+      </main>
+    </div>
+
+    <!-- CARDS -->
+    <section id="menu-carrinho">
+      <section id="cards">
+        <article class="card">
+          <img src="" alt="" />
+          <div class="descricao">
+            <h2></h2>
+            <p></p>
+            <data value=""></data>
+          </div>
+        </article>
+      </section>
+
+      <section id="final">
+        <aside class="resumo">
+          <h2></h2>
+          <p>Subtotal: <data value=""></data></p>
+          <p>Frete: <data value="">R$ 20,00</data></p>
+          <p id="total">Total: <data value=""></data></p>
+          <button id="pagar">Finalizar compra</button>
+          <div id="pagamento" class="popup">
+            <form class="form-pagamento">
+              <h2>Finalizar compra</h2>
+
+              <label for="endereco">CEP</label>
+              <input
+                type="text"
+                id="endereco"
+                placeholder="00000-000"
+                required
+              /><br /><br />
+
+              <label>Método de pagamento:</label>
+
+              <div class="metodos-pagamento">
+                <label>
+                  <input type="radio" name="pagamento" value="pix" required />
+                  PIX
+                </label>
+
+                <label>
+                  <input type="radio" name="pagamento" value="cartao" />
+                  Cartão
+                </label>
+
+                <label>
+                  <input type="radio" name="pagamento" value="boleto" />
+                  Boleto
+                </label>
+              </div>
+
+              <button id="btn-enviar" type="submit">Enviar</button>
+              <button id="btn-cancelar">Cancelar</button>
+            </form>
+          </div>
+        </aside>
+      </section>
     </section>
-  </section>
 
-  <p id="carrinho-vazio">🛒 Seu carrinho está vazio.</p>
+    <p id="carrinho-vazio">🛒 Seu carrinho está vazio.</p>
 
-  <!-- RODAPE -->
-  <footer>
-    <aside>
-      <h3>Atendimento</h3>
-      <ul>
-        <li><a href="../PAGES/ajuda.html">FAC</a></li>
-        <li><a href="">SAC</a></li>
-      </ul>
-    </aside>
-    
-  <section>
-    <h3>Mídias sociais:</h3>
-    <ul>
-      <li><a href=""><img src="../ASSETS/ICON/Instagram_icon.png" alt="Instagram" class="icon"></a></li>
-      <li><a href=""><img src="../ASSETS/ICON/twitter-icon.png" alt="Twitter" class="icon"></a></li>
-    </ul>
-  </section>
+    <!-- RODAPE -->
+    <footer>
+      <aside>
+        <h3>Atendimento</h3>
+        <ul>
+          <li><a href="../PAGES/ajuda.html">FAC</a></li>
+          <li><a href="">SAC</a></li>
+        </ul>
+      </aside>
 
-  <section>
-    <a href=""><img src="../ASSETS/IMG/Logo.png" alt="Logo do site Infinity Tech" class="logo"></a>
-    <h2>INFINITY TECH®</h2>
-    <h2>Site desenvolvido por: Lucas Alves e Valentin Vieira</h2>
-  </section>
-  </footer>
+      <section>
+        <h3>Mídias sociais:</h3>
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/infinity.tech.oficial?stkn=ZWI5dGs0c3RweG5q"
+              ><img
+                src="../ASSETS/ICON/Instagram_icon.png"
+                alt="Instagram"
+                class="icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https://x.com/LucasAl80391541"
+              ><img
+                src="../ASSETS/ICON/twitter-icon.png"
+                alt="Twitter"
+                class="icon"
+            /></a>
+          </li>
+        </ul>
+      </section>
 
-<!-- JS -->
-  <script src="../JS/nav-lateral.js" defer></script>
-  <script src="../JS/tema.js" defer></script>
-  <script src="../JS/fonte.js" defer></script>
-  <script src="../JS/carrinho.js" defer></script>
-</body>
+      <section>
+        <a href=""
+          ><img
+            src="../ASSETS/IMG/Logo.png"
+            alt="Logo do site Infinity Tech"
+            class="logo"
+        /></a>
+        <h2>INFINITY TECH®</h2>
+        <h2>Site desenvolvido por: Lucas Alves</h2>
+      </section>
+    </footer>
+
+    <!-- JS -->
+    <script src="../JS/nav-lateral.js" defer></script>
+    <script src="../JS/tema.js" defer></script>
+    <script src="../JS/fonte.js" defer></script>
+    <script src="../JS/carrinho.js" defer></script>
+  </body>
 </html>
